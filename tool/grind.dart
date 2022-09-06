@@ -1,69 +1,101 @@
 import 'dart:io';
 
+import 'package:common_utils/common_utils.dart';
 import 'package:grinder/grinder.dart';
 import 'package:path/path.dart';
-import 'package:pub_semver/pub_semver.dart';
 import 'package:yaml/yaml.dart';
 
 import 'config.dart';
+import 'tick_tool.dart';
 import 'version_tool.dart';
 
-part '_build.dart';
-part '_project_manage.dart';
+part '_version.dart';
 
-main(args) => grind(args);
+part 'build_tool.dart';
 
-@Task('add minor version number')
-void addVersion() async {
-  String projectPath = Directory('.').absolute.path;
-  String yamlPath = join(projectPath, 'pubspec.yaml');
-  String yamlContent = await File(yamlPath).readAsString();
-  dynamic content = loadYaml(yamlContent);
-  String version = content['version'];
-  //rename version
+Future main(args) => grind(args);
 
-  Version resultVersion = VersionTool.fromText(version).nextMinorTag('dev');
+@Task()
+Future test() => TestRunner().testAsync();
 
-  String result = yamlContent.replaceFirst(version, resultVersion.toString());
-  await File(yamlPath).writeAsString(result);
-}
+@DefaultTask()
+@Depends(genClean)
+void build() {}
 
-@Task('add path version number')
-void addVersionPatch() async {
-  String projectPath = Directory('.').absolute.path;
-  String yamlPath = join(projectPath, 'pubspec.yaml');
-  String yamlContent = await File(yamlPath).readAsString();
-  dynamic content = loadYaml(yamlContent);
-  String version = content['version'];
-  //rename version
+@Task()
+void clean() => defaultClean();
 
-  Version resultVersion = VersionTool.fromText(version).nextPatchTag('dev');
-
-  String result = yamlContent.replaceFirst(version, resultVersion.toString());
-  await File(yamlPath).writeAsString(result);
-}
-
-@Task('add major version number')
-void addVersionMajor() async {
-  String projectPath = Directory('.').absolute.path;
-  String yamlPath = join(projectPath, 'pubspec.yaml');
-  String yamlContent = await File(yamlPath).readAsString();
-  dynamic content = loadYaml(yamlContent);
-  String version = content['version'];
-  //rename version
-
-  Version resultVersion = VersionTool.fromText(version).nextMajorTag('dev');
-
-  String result = yamlContent.replaceFirst(version, resultVersion.toString());
-  await File(yamlPath).writeAsString(result);
+@Task('build runner clean')
+void genClean() async {
+  await runAsync('fvm', arguments: [
+    'flutter',
+    'pub',
+    'run',
+    'build_runner',
+    'build',
+    '--delete-conflicting-outputs'
+  ]);
 }
 
 @Task()
-Future<String> getVersion() async {
-  String projectPath = Directory('.').absolute.path;
-  String yamlPath = join(projectPath, 'pubspec.yaml');
-  String yamlContent = await File(yamlPath).readAsString();
-  dynamic content = loadYaml(yamlContent);
-  String version = content['version'];
-  return version;
+void buildApkDev() async {
+  buildFunc('dev');
+}
+
+@Task()
+void buildApkRelease() async {
+  buildFunc('release');
+}
+
+@Task()
+void buildApkLocal() async {
+  buildFunc('local');
+}
+
+@Task()
+void buildIosDev() async {
+  final tickTool = TickTool();
+  tickTool.start();
+  await runAsync(
+    'flutter',
+    arguments: [
+      'build',
+      'ios',
+      '--dart-define',
+      'ENV=dev',
+    ],
+  );
+  tickTool.end();
+}
+
+@Task()
+void buildIos() async {
+  final tickTool = TickTool();
+  tickTool.start();
+  await runAsync(
+    'flutter',
+    arguments: [
+      'build',
+      'ios',
+      '--dart-define',
+      'ENV=release',
+    ],
+  );
+  tickTool.end();
+}
+
+@Task()
+void buildIosLocal() async {
+  final tickTool = TickTool();
+  tickTool.start();
+  await runAsync(
+    'flutter',
+    arguments: [
+      'build',
+      'ios',
+      '--dart-define',
+      'ENV=local',
+    ],
+  );
+  tickTool.end();
 }

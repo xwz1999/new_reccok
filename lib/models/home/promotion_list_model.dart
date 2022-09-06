@@ -1,5 +1,6 @@
 
 import 'package:json_annotation/json_annotation.dart';
+import 'package:new_recook/utils/text_utils.dart';
 import '../base_model.dart';
 
 part 'promotion_list_model.g.dart';
@@ -29,8 +30,20 @@ class Promotion extends Object {
   String showName;
   int isProcessing;
 
-  Promotion(this.id,this.promotionName,this.startTime, this.endTime, this.showName, this.isProcessing,);
+  String? trueEndTime;
 
+  Promotion(this.id,this.promotionName,this.startTime, this.endTime, this.showName, this.isProcessing,{this.trueEndTime});
+
+  String? getTrueEndTime(){
+    if (TextUtils.isEmpty(trueEndTime)) {
+      if (TextUtils.isEmpty(startTime)){
+        return null;
+      }else{
+        trueEndTime = DateTime.parse(startTime).add(Duration(hours: 2)).toString();
+      }
+    }
+    return trueEndTime;
+  }
 
   factory Promotion.fromJson(Map<String, dynamic> srcJson) => _$PromotionFromJson(srcJson);
 

@@ -13,9 +13,8 @@ class ImgButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialButton(
-      padding: EdgeInsets.zero,
-      onPressed: onPressed,
+    return GestureDetector(
+      onTap: onPressed,
       child: Image.asset(path!, height: height, width: width),
     );
   }

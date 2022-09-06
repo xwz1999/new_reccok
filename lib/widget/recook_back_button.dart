@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:new_recook/constants/styles.dart';
 
 
@@ -19,13 +21,13 @@ class RecookBackButton extends StatelessWidget {
     if (Navigator.canPop(context)) {
       return text??false
           ? MaterialButton(
-              minWidth:58,
+              minWidth:106.w,
               padding: EdgeInsets.zero,
               child: Text(
                 '取消',
                 overflow: TextOverflow.visible,
                 style: TextStyle(
-                  fontSize: 14,
+                  fontSize: 28.sp,
                   color: white??false ? Colors.white : Color(0xFF333333),
                 ),
               ),
@@ -35,8 +37,7 @@ class RecookBackButton extends StatelessWidget {
             )
           : IconButton(
               icon: Icon(
-                Icons.arrow_back_ios,
-                size: 17,
+                CupertinoIcons.chevron_back,
                 color: white??false ? Colors.white : AppColor.blackColor,
               ),
               onPressed: () {

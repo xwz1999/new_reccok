@@ -1,133 +1,245 @@
-import 'package:json_annotation/json_annotation.dart';
-part 'home_weather_model.g.dart';
-
-@JsonSerializable()
 class HomeWeatherModel {
-  final String cityid;
-  final String date;
-  final String week;
-  final String updateTime;
-  final String city;
-  final String cityEn;
-  final String country;
-  final String countryEn;
-  final String wea;
-  final String weaImg;
-  final String tem;
-  final String tem1;
-  final String tem2;
-  final String win;
-  final String winSpeed;
-  final String winMeter;
-  final String humidity;
-  final String visibility;
-  final String pressure;
-  final String air;
-  final String airPm25;
-  final String airLevel;
-  final String airTips;
-  final Alarm alarm;
-  final Aqi aqi;
+  String? cityid;
+  String? date;
+  String? week;
+  String? updateTime;
+  String? city;
+  String? cityEn;
+  String? country;
+  String? countryEn;
+  String? wea;
+  String? weaImg;
+  String? tem;
+  String? tem1;
+  String? tem2;
+  String? win;
+  String? winSpeed;
+  String? winMeter;
+  String? humidity;
+  String? visibility;
+  String? pressure;
+  String? air;
+  String? airPm25;
+  String? airLevel;
+  String? airTips;
+  Alarm? alarm;
+  dynamic aqi;
 
-  factory HomeWeatherModel.fromJson(Map<String, dynamic> json) =>
-      _$HomeWeatherModelFromJson(json);
-  Map<String, dynamic> toJson() => _$HomeWeatherModelToJson(this);
+  HomeWeatherModel(
+      {this.cityid,
+        this.date,
+        this.week,
+        this.updateTime,
+        this.city,
+        this.cityEn,
+        this.country,
+        this.countryEn,
+        this.wea,
+        this.weaImg,
+        this.tem,
+        this.tem1,
+        this.tem2,
+        this.win,
+        this.winSpeed,
+        this.winMeter,
+        this.humidity,
+        this.visibility,
+        this.pressure,
+        this.air,
+        this.airPm25,
+        this.airLevel,
+        this.airTips,
+        this.alarm,
+        this.aqi});
 
-  const HomeWeatherModel({
-    required this.cityid,
-    required this.date,
-    required this.week,
-    required this.updateTime,
-    required this.city,
-    required this.cityEn,
-    required this.country,
-    required this.countryEn,
-    required this.wea,
-    required this.weaImg,
-    required this.tem,
-    required this.tem1,
-    required this.tem2,
-    required this.win,
-    required this.winSpeed,
-    required this.winMeter,
-    required this.humidity,
-    required this.visibility,
-    required this.pressure,
-    required this.air,
-    required this.airPm25,
-    required this.airLevel,
-    required this.airTips,
-    required this.alarm,
-    required this.aqi,
-  });
+  HomeWeatherModel.fromJson(Map<String, dynamic> json) {
+    cityid = json['cityid'];
+    date = json['date'];
+    week = json['week'];
+    updateTime = json['update_time'];
+    city = json['city'];
+    cityEn = json['cityEn'];
+    country = json['country'];
+    countryEn = json['countryEn'];
+    wea = json['wea'];
+    weaImg = json['wea_img'];
+    tem = json['tem'];
+    tem1 = json['tem1'];
+    tem2 = json['tem2'];
+    win = json['win'];
+    winSpeed = json['win_speed'];
+    winMeter = json['win_meter'];
+    humidity = json['humidity'];
+    visibility = json['visibility'];
+    pressure = json['pressure'];
+    air = json['air'];
+    airPm25 = json['air_pm25'];
+    airLevel = json['air_level'];
+    airTips = json['air_tips'];
+    alarm = json['alarm'] != null ? new Alarm.fromJson(json['alarm']) : null;
+    if(json['aqi'].runtimeType!=[].runtimeType){
+      print(json['aqi'].runtimeType);
+      aqi = ((json['aqi'] != null) ? new Aqi.fromJson(json['aqi']): null);
+    }else{
+      aqi = null;
+    }
+
+  }
+
+  Map<String, dynamic> toJson() {
+    final Map<String, dynamic> data = new Map<String, dynamic>();
+    data['cityid'] = this.cityid;
+    data['date'] = this.date;
+    data['week'] = this.week;
+    data['update_time'] = this.updateTime;
+    data['city'] = this.city;
+    data['cityEn'] = this.cityEn;
+    data['country'] = this.country;
+    data['countryEn'] = this.countryEn;
+    data['wea'] = this.wea;
+    data['wea_img'] = this.weaImg;
+    data['tem'] = this.tem;
+    data['tem1'] = this.tem1;
+    data['tem2'] = this.tem2;
+    data['win'] = this.win;
+    data['win_speed'] = this.winSpeed;
+    data['win_meter'] = this.winMeter;
+    data['humidity'] = this.humidity;
+    data['visibility'] = this.visibility;
+    data['pressure'] = this.pressure;
+    data['air'] = this.air;
+    data['air_pm25'] = this.airPm25;
+    data['air_level'] = this.airLevel;
+    data['air_tips'] = this.airTips;
+    if (this.alarm != null) {
+      data['alarm'] = this.alarm!.toJson();
+    }
+    if (this.aqi != null) {
+      data['aqi'] = this.aqi.toJson();
+    }
+    return data;
+  }
 }
 
-@JsonSerializable()
 class Alarm {
-  final String alarmType;
-  final String alarmLevel;
-  final String alarmContent;
+  String? alarmType;
+  String? alarmLevel;
+  String? alarmContent;
 
-  factory Alarm.fromJson(Map<String, dynamic> json) => _$AlarmFromJson(json);
-  Map<String, dynamic> toJson() => _$AlarmToJson(this);
+  Alarm({this.alarmType, this.alarmLevel, this.alarmContent});
 
-  const Alarm({
-    required this.alarmType,
-    required this.alarmLevel,
-    required this.alarmContent,
-  });
+  Alarm.fromJson(Map<String, dynamic> json) {
+    alarmType = json['alarm_type'];
+    alarmLevel = json['alarm_level'];
+    alarmContent = json['alarm_content'];
+  }
+
+  Map<String, dynamic> toJson() {
+    final Map<String, dynamic> data = new Map<String, dynamic>();
+    data['alarm_type'] = this.alarmType;
+    data['alarm_level'] = this.alarmLevel;
+    data['alarm_content'] = this.alarmContent;
+    return data;
+  }
 }
 
-@JsonSerializable()
 class Aqi {
-  final String air;
-  final String airLevel;
-  final String airTips;
-  final String pm25;
-  final String pm25Desc;
-  final String pm10;
-  final String pm10Desc;
-  final String o3;
-  final String o3Desc;
-  final String no2;
-  final String no2Desc;
-  final String so2;
-  final String so2Desc;
-  final String kouzhao;
-  final String waichu;
-  final String kaichuang;
-  final String jinghuaqi;
-  final String cityid;
-  final String city;
-  final String cityEn;
-  final String country;
-  final String countryEn;
+  String? air;
+  String? airLevel;
+  String? airTips;
+  String? pm25;
+  String? pm25Desc;
+  String? pm10;
+  String? pm10Desc;
+  String? o3;
+  String? o3Desc;
+  String? no2;
+  String? no2Desc;
+  String? so2;
+  String? so2Desc;
+  String? kouzhao;
+  String? waichu;
+  String? kaichuang;
+  String? jinghuaqi;
+  String? cityid;
+  String? city;
+  String? cityEn;
+  String? country;
+  String? countryEn;
 
-  factory Aqi.fromJson(Map<String, dynamic> json) => _$AqiFromJson(json);
-  Map<String, dynamic> toJson() => _$AqiToJson(this);
+  Aqi(
+      {this.air,
+        this.airLevel,
+        this.airTips,
+        this.pm25,
+        this.pm25Desc,
+        this.pm10,
+        this.pm10Desc,
+        this.o3,
+        this.o3Desc,
+        this.no2,
+        this.no2Desc,
+        this.so2,
+        this.so2Desc,
+        this.kouzhao,
+        this.waichu,
+        this.kaichuang,
+        this.jinghuaqi,
+        this.cityid,
+        this.city,
+        this.cityEn,
+        this.country,
+        this.countryEn});
 
-  const Aqi({
-    required this.air,
-    required this.airLevel,
-    required this.airTips,
-    required this.pm25,
-    required this.pm25Desc,
-    required this.pm10,
-    required this.pm10Desc,
-    required this.o3,
-    required this.o3Desc,
-    required this.no2,
-    required this.no2Desc,
-    required this.so2,
-    required this.so2Desc,
-    required this.kouzhao,
-    required this.waichu,
-    required this.kaichuang,
-    required this.jinghuaqi,
-    required this.cityid,
-    required this.city,
-    required this.cityEn,
-    required this.country,
-    required this.countryEn,
-  });
+  Aqi.fromJson(Map<String, dynamic> json) {
+    air = json['air'];
+    airLevel = json['air_level'];
+    airTips = json['air_tips'];
+    pm25 = json['pm25'];
+    pm25Desc = json['pm25_desc'];
+    pm10 = json['pm10'];
+    pm10Desc = json['pm10_desc'];
+    o3 = json['o3'];
+    o3Desc = json['o3_desc'];
+    no2 = json['no2'];
+    no2Desc = json['no2_desc'];
+    so2 = json['so2'];
+    so2Desc = json['so2_desc'];
+    kouzhao = json['kouzhao'];
+    waichu = json['waichu'];
+    kaichuang = json['kaichuang'];
+    jinghuaqi = json['jinghuaqi'];
+    cityid = json['cityid'];
+    city = json['city'];
+    cityEn = json['cityEn'];
+    country = json['country'];
+    countryEn = json['countryEn'];
+  }
+
+  Map<String, dynamic> toJson() {
+    final Map<String, dynamic> data = new Map<String, dynamic>();
+    data['air'] = this.air;
+    data['air_level'] = this.airLevel;
+    data['air_tips'] = this.airTips;
+    data['pm25'] = this.pm25;
+    data['pm25_desc'] = this.pm25Desc;
+    data['pm10'] = this.pm10;
+    data['pm10_desc'] = this.pm10Desc;
+    data['o3'] = this.o3;
+    data['o3_desc'] = this.o3Desc;
+    data['no2'] = this.no2;
+    data['no2_desc'] = this.no2Desc;
+    data['so2'] = this.so2;
+    data['so2_desc'] = this.so2Desc;
+    data['kouzhao'] = this.kouzhao;
+    data['waichu'] = this.waichu;
+    data['kaichuang'] = this.kaichuang;
+    data['jinghuaqi'] = this.jinghuaqi;
+    data['cityid'] = this.cityid;
+    data['city'] = this.city;
+    data['cityEn'] = this.cityEn;
+    data['country'] = this.country;
+    data['countryEn'] = this.countryEn;
+    return data;
+  }
 }

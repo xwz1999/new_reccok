@@ -1,5 +1,3 @@
-
-import 'package:flutter/material.dart';
 import 'package:new_recook/gen/assets.gen.dart';
 import 'package:new_recook/utils/headers.dart';
 import 'package:pull_to_refresh_flutter3/pull_to_refresh_flutter3.dart';
@@ -69,12 +67,9 @@ class _RefreshWidgetState extends State<RefreshWidget> {
   @override
   Widget build(BuildContext context) {
     return RefreshConfiguration(
-     // autoLoad: true,
       hideFooterWhenNotFull: true,
       headerTriggerDistance: widget.headerTriggerDistance ?? 60.w,
       child: SmartRefresher(
-        // enableOverScroll: widget.enableOverScroll,
-
         enablePullDown: widget.onRefresh != null,
         enablePullUp: widget.onLoadMore != null,
         header: widget.header != null
@@ -91,7 +86,6 @@ class _RefreshWidgetState extends State<RefreshWidget> {
                   size: 20 * 2.sp,
                   color: widget.color,
                 ),
-                // refreshingIcon:CircularProgressIndicator(),
                 completeIcon: Icon(
                   Icons.check,
                   size: 20 * 2.sp,

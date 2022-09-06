@@ -74,7 +74,7 @@ class __PrivacyDialogState extends State<_PrivacyDialog> {
                     40.hb,
                     GestureDetector(
                       onTap: () {
-                        Get.to(WebViewPage(url: API.web.privacy,title: '用户使用协议',));
+                        Get.to(WebViewPage(url: API.webAPI.webPrivacy,title: '用户使用协议',));
 
                       },
                       child: Text.rich(TextSpan(
@@ -159,7 +159,7 @@ _recognizer(context, int type) {
   recognizer.onTap = () {
     print("点击协议了");
 
-    Get.to(WebViewPage(url: type == 1?API.web.privacy:API.web.agreement,title: type == 1?'用户隐私政策':'用户服务协议',));
+    Get.to(WebViewPage(url: type == 1?API.webAPI.webPrivacy:API.webAPI.webAgreement,title: type == 1?'用户隐私政策':'用户服务协议',));
 
   };
   return recognizer;
@@ -200,7 +200,7 @@ class _PrivacySecondDialog extends StatelessWidget {
                 40.hb,
                 GestureDetector(
                   onTap: () {
-                    Get.to(WebViewPage(url: API.web.privacy,title: '用户使用协议',));
+                    Get.to(WebViewPage(url: API.webAPI.webPrivacy,title: '用户使用协议',));
 
                   },
                   child: Text.rich(TextSpan(

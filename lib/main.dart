@@ -8,7 +8,6 @@ import 'package:new_recook/utils/developer_util.dart';
 import 'package:provider/provider.dart';
 import 'package:new_recook/utils/headers.dart';
 import 'constants/app_theme.dart';
-import 'constants/config.dart';
 import 'main_initialize.dart';
 
 void main() async {
@@ -23,13 +22,6 @@ void main() async {
   await MainInitialize.hive();
   await MainInitialize.initJPush();
 
-  AppConfig.initial(
-  );
-
-  // 设置当前是否为测试环境
-  const bool isDebug =
-  const bool.fromEnvironment('ISDEBUG', defaultValue: false);
-  AppConfig.setDebug(isDebug);
 
   runApp(MyApp());
 }

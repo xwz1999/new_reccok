@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.akuhome.new_recook"
+    android:versionCode="1"
+    android:versionName="1.0.0" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="30" />
+    <!-- 允许程序读写手机状态和身份 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 访问网络 -->
+    <permission android:name="android.permission.INTERNET" />
+    <!-- 用于获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 用于读取手机当前的状态 -->
+    <permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 用于写入缓存数据到扩展存储卡 -->
+    <permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许程序访问CellID或WiFi热点来获取粗略的位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 精确定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 申请调用A-GPS模块 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- 用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 用于充值话费时获取通讯录的权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- Support WeChat query on Android P -->
+    <queries>
+        <package android:name="com.tencent.mm" />
+        <!-- 正式环境 -->
+        <package android:name="com.eg.android.AlipayGphone" /> <!-- 沙箱环境 -->
+        <package android:name="com.eg.android.AlipayGphoneRC" />
+        <package android:name="hk.alipay.wallet" />
+        <package android:name="com.akuhome.new_recook" />
+
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+        <intent>
+            <action android:name="android.media.action.ACTION_VIDEO_CAPTURE" />
+        </intent>
+        <intent> <!-- H5 支持手淘登录 -->
+            <action android:name="*" />
+
+            <data android:scheme="tbopen" />
+        </intent>
+    </queries>
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.screen.landscape"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <application
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:icon="@mipmap/ic_launcher"
+        android:label="瑞库客"
+        android:usesCleartextTraffic="true" >
+        <activity
+            android:name="com.akuhome.new_recook.MainActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:theme="@style/LaunchTheme"
+            android:windowSoftInputMode="adjustResize" >
+
+            <!--
+                 Specifies an Android theme to apply to this Activity as soon as
+                 the Android process has started. This theme is visible to the user
+                 while the Flutter UI initializes. After that, this theme continues
+                 to determine the Window background behind the Flutter UI.
+            -->
+            <meta-data
+                android:name="io.flutter.embedding.android.NormalTheme"
+                android:resource="@style/NormalTheme" />
+            <!--
+                 Displays an Android View that continues showing the launch screen
+                 Drawable until Flutter paints its first frame, then this splash
+                 screen fades out. A splash screen is useful to avoid any visual
+                 gap between the end of Android's launch screen and the painting of
+                 Flutter's first frame.
+            -->
+            <meta-data
+                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+                android:resource="@drawable/launch_background" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+             Don't delete the meta-data below.
+             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+        -->
+        <meta-data
+            android:name="flutterEmbedding"
+            android:value="2" />
+
+        <activity
+            android:name="com.jarvan.fluwx.wxapi.FluwxWXEntryActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.akuhome.new_recook"
+            android:theme="@style/DisablePreviewTheme" />
+
+        <activity-alias
+            android:name="com.akuhome.new_recook.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:targetActivity="com.jarvan.fluwx.wxapi.FluwxWXEntryActivity"
+            android:taskAffinity="com.akuhome.new_recook"
+            android:theme="@style/DisablePreviewTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="sdksample" />
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:name="com.akuhome.new_recook.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleInstance"
+            android:targetActivity="com.jarvan.fluwx.wxapi.FluwxWXEntryActivity"
+            android:theme="@style/DisablePreviewTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="sdksample" />
+            </intent-filter>
+        </activity-alias>
+
+        <provider
+            android:name="com.jarvan.fluwx.FluwxFileProvider"
+            android:authorities="com.akuhome.new_recook.fluwxprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/fluwx_file_provider_paths" />
+        </provider>
+
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false" />
+        <uses-library
+            android:name="androidx.window.sidecar"
+            android:required="false" />
+
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:clearTaskOnLaunch="true"
+            android:screenOrientation="sensorLandscape"
+            android:stateNotNeeded="true"
+            android:theme="@style/zxing_CaptureTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <provider
+            android:name="com.luck.picture.lib.PictureFileProvider"
+            android:authorities="com.akuhome.new_recook.luckProvider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" >
+            </meta-data>
+        </provider>
+
+        <activity
+            android:name="com.luck.picture.lib.PictureSelectorActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" >
+        </activity>
+        <activity
+            android:name="com.luck.picture.lib.PictureSelectorWeChatStyleActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" >
+        </activity>
+        <activity
+            android:name="com.luck.picture.lib.PictureSelectorCameraEmptyActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Picture.Theme.Translucent" >
+        </activity>
+        <activity
+            android:name="com.luck.picture.lib.PictureCustomCameraActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" >
+        </activity>
+        <activity
+            android:name="com.luck.picture.lib.PicturePreviewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" >
+        </activity>
+        <activity
+            android:name="com.luck.picture.lib.PictureSelectorPreviewWeChatStyleActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" >
+        </activity>
+        <activity
+            android:name="com.luck.picture.lib.PictureVideoPlayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="sensor" >
+        </activity>
+        <activity
+            android:name="com.luck.picture.lib.PictureExternalPreviewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" >
+        </activity>
+        <activity
+            android:name="com.luck.picture.lib.PicturePlayAudioActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" >
+        </activity>
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:theme="@style/Base.Theme.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.yalantis.ucrop.PictureMultiCuttingActivity"
+            android:theme="@style/Base.Theme.NoActionBar" >
+        </activity>
+
+        <meta-data
+            android:name="huawei_module_scankit_local"
+            android:value="20100300" />
+        <meta-data
+            android:name="huawei_module_scankit_sdk_version"
+            android:value="scanplus:2.1.0.300" />
+        <meta-data
+            android:name="com.huawei.hms.client.service.name:scanplus"
+            android:value="scanplus:2.1.0.300" />
+        <meta-data
+            android:name="com.huawei.hms.min_api_level:scanplus:huawei_module_scankit"
+            android:value="1" />
+        <meta-data
+            android:name="com.huawei.hms.min_api_level:scanplus:hmscore"
+            android:value="1" />
+
+        <activity android:name="com.huawei.hms.hmsscankit.ScanKitActivity" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize|locale|keyboard|screenLayout|density|fontScale|layoutDirection|smallestScreenSize"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize|locale|keyboard|screenLayout|density|fontScale|layoutDirection|smallestScreenSize"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.app.PayResultActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize|locale|keyboard|screenLayout|density|fontScale|layoutDirection|smallestScreenSize"
+            android:exported="true"
+            android:launchMode="singleInstance"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.app.AlipayResultActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize|locale|keyboard|screenLayout|density|fontScale|layoutDirection|smallestScreenSize"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.app.H5OpenAuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize|locale|keyboard|screenLayout|density|fontScale|layoutDirection|smallestScreenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.app.APayEntranceActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize|locale|keyboard|screenLayout|density|fontScale|layoutDirection|smallestScreenSize"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <!--
+        Service for holding metadata. Cannot be instantiated.
+        Metadata will be merged from other manifests.
+        -->
+        <service
+            android:name="androidx.camera.core.impl.MetadataHolderService"
+            android:enabled="false"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.huawei.hms.client.service.name:dynamic-api"
+            android:value="dynamic-api:1.0.13.303" />
+        <meta-data
+            android:name="com.huawei.hms.min_api_level:dynamic-api:huawei_module_dynamicloader"
+            android:value="2" />
+
+        <provider
+            android:name="com.huawei.hms.mlsdk.common.provider.MLInitializerProvider"
+            android:authorities="com.akuhome.new_recook.MLInitializerProvider"
+            android:exported="false" />
+        <provider
+            android:name="com.huawei.agconnect.core.provider.AGConnectInitializeProvider"
+            android:authorities="com.akuhome.new_recook.AGCInitializeProvider"
+            android:exported="false" />
+
+        <service
+            android:name="com.huawei.agconnect.core.ServiceDiscovery"
+            android:exported="false" />
+    </application>
+
+</manifest>
