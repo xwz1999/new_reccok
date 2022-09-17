@@ -31,6 +31,7 @@ Promotion _$PromotionFromJson(Map<String, dynamic> json) {
     json['endTime'] as String,
     json['showName'] as String,
     json['isProcessing'] as int,
+    trueEndTime: json['trueEndTime'] as String?,
   );
 }
 
@@ -41,4 +42,5 @@ Map<String, dynamic> _$PromotionToJson(Promotion instance) => <String, dynamic>{
       'endTime': instance.endTime,
       'showName': instance.showName,
       'isProcessing': instance.isProcessing,
+      'trueEndTime': instance.trueEndTime,
     };

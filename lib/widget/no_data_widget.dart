@@ -4,32 +4,32 @@ import 'package:new_recook/utils/headers.dart';
 class NoDataWidget extends StatelessWidget {
   final String text;
   final Widget? icon;
-  const NoDataWidget({Key? key, required this.text, this.icon}) : super(key: key);
+  final double? height;
+  const NoDataWidget({Key? key, required this.text, this.icon, this.height = 500,}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
       return Container(
-        height: double.infinity,
+        height: this.height,
         width: double.infinity,
+        alignment: Alignment.center,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             icon ??
                 Image.asset(
-                  Assets.images.nodata.path,
-                  width: 160.w,
-                  height: 160.w,
+                  Assets.images.imgNoData.path,
+                  width: 260.w,
+                  height: 260.w,
                 ),
             SizedBox(
               height: 8,
             ),
             Text(
               text,
-              style: TextStyle(fontSize: 28.sp,color:Color(0xFF666666) ),
+              style: TextStyle(fontSize: 28.sp,color:Color(0xFFBBBBBB) ),
             ),
-            SizedBox(
-              height: 60.w,
-            )
+
           ],
         ),
       );

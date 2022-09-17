@@ -21,10 +21,9 @@ class TextReButton extends StatelessWidget {
       child: Container(
         alignment: Alignment.center,
         decoration: boxDecoration != null
-            ? boxDecoration:null,
+            ? boxDecoration:BoxDecoration(color: color==null? Colors.transparent:color,),
         width: width,
         height: height,
-        color: color==null? Colors.transparent:color,
         child: Text(
             text??"",style: style==null?TextStyle(
           fontSize: 30.sp,color: Color(0xFF333333)

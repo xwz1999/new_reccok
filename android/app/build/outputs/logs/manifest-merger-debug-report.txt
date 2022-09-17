@@ -1,10 +1,10 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/datang/StudioProjects/new_recook/android/app/src/main/AndroidManifest.xml:1:1-65:12
-INJECTED from /Users/datang/StudioProjects/new_recook/android/app/src/main/AndroidManifest.xml:1:1-65:12
-INJECTED from /Users/datang/StudioProjects/new_recook/android/app/src/main/AndroidManifest.xml:1:1-65:12
-INJECTED from /Users/datang/StudioProjects/new_recook/android/app/src/main/AndroidManifest.xml:1:1-65:12
-MERGED from /Users/datang/StudioProjects/new_recook/android/app/src/main/AndroidManifest.xml:1:1-65:12
+ADDED from /Users/datang/StudioProjects/new_recook/android/app/src/main/AndroidManifest.xml:1:1-69:12
+INJECTED from /Users/datang/StudioProjects/new_recook/android/app/src/main/AndroidManifest.xml:1:1-69:12
+INJECTED from /Users/datang/StudioProjects/new_recook/android/app/src/main/AndroidManifest.xml:1:1-69:12
+INJECTED from /Users/datang/StudioProjects/new_recook/android/app/src/main/AndroidManifest.xml:1:1-69:12
+MERGED from /Users/datang/StudioProjects/new_recook/android/app/src/main/AndroidManifest.xml:1:1-69:12
 MERGED from [:fluwx] /Users/datang/StudioProjects/new_recook/build/fluwx/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-66:12
 MERGED from [:camera_android] /Users/datang/StudioProjects/new_recook/build/camera_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-12:12
 MERGED from [:image_picker_android] /Users/datang/StudioProjects/new_recook/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-19:12
@@ -12,11 +12,12 @@ MERGED from [:flutter_plugin_android_lifecycle] /Users/datang/StudioProjects/new
 MERGED from [:image_gallery_saver] /Users/datang/StudioProjects/new_recook/build/image_gallery_saver/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:sqflite] /Users/datang/StudioProjects/new_recook/build/sqflite/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:tobias] /Users/datang/StudioProjects/new_recook/build/tobias/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-25:12
+MERGED from [:webview_flutter] /Users/datang/StudioProjects/new_recook/build/webview_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:scan] /Users/datang/StudioProjects/new_recook/build/scan/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-13:12
 MERGED from [:path_provider_android] /Users/datang/StudioProjects/new_recook/build/path_provider_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:amap_flutter_location] /Users/datang/StudioProjects/new_recook/build/amap_flutter_location/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:wakelock] /Users/datang/StudioProjects/new_recook/build/wakelock/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:image_cropper] /Users/datang/StudioProjects/new_recook/build/image_cropper/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
-MERGED from [:webview_flutter_android] /Users/datang/StudioProjects/new_recook/build/webview_flutter_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:shared_preferences_android] /Users/datang/StudioProjects/new_recook/build/shared_preferences_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:just_audio] /Users/datang/StudioProjects/new_recook/build/just_audio/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:permission_handler_android] /Users/datang/StudioProjects/new_recook/build/permission_handler_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
@@ -32,8 +33,7 @@ MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/datang/.gradle/cac
 MERGED from [androidx.window:window:1.0.0-beta04] /Users/datang/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/a2f650a70b204393ba1526e0273d563e/multidex-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.tencent.mm.opensdk:wechat-sdk-android-without-mta:6.8.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/7127593a2f4dbbadfcbf2714b074f5c4/jetified-wechat-sdk-android-without-mta-6.8.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.github.yalantis:ucrop:2.2.6] /Users/datang/.gradle/caches/transforms-2/files-2.1/08606f6bbb85756e081e3e32d4dc23ed/jetified-ucrop-2.2.6/AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/062c584e7105f32bea72d749c12db8a1/appcompat-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.yalantis:ucrop:2.2.8] /Users/datang/.gradle/caches/transforms-2/files-2.1/dc5f536b86d379e1e69db518b4774c3b/jetified-ucrop-2.2.8/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.webkit:webkit:1.0.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/385d6fc0f66ca457efb199b0b3a6ac61/webkit-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/7801b1660b3829ad4bb5f3a2452c817b/jetified-glide-4.11.0/AndroidManifest.xml:2:1-12:12
 MERGED from [androidx.exifinterface:exifinterface:1.3.3] /Users/datang/.gradle/caches/transforms-2/files-2.1/6294b03a0121a0db938b4b46adeeab06/exifinterface-1.3.3/AndroidManifest.xml:17:1-24:12
@@ -41,23 +41,23 @@ MERGED from [com.google.android.exoplayer:exoplayer-hls:2.18.1] /Users/datang/.g
 MERGED from [com.google.android.exoplayer:exoplayer-dash:2.18.1] /Users/datang/.gradle/caches/transforms-2/files-2.1/f3a9d84cd4a2118824dd79d004807bbc/jetified-exoplayer-dash-2.18.1/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.18.1] /Users/datang/.gradle/caches/transforms-2/files-2.1/2e56c95d2cf841b6514e0f8a5bd2e943/jetified-exoplayer-smoothstreaming-2.18.1/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.exoplayer:exoplayer-core:2.18.1] /Users/datang/.gradle/caches/transforms-2/files-2.1/dcddb311c85ad4ba0fb094e649f15a67/jetified-exoplayer-core-2.18.1/AndroidManifest.xml:17:1-26:12
-MERGED from [androidx.fragment:fragment:1.1.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/8601dd65e0c6893d5abc5ccde1e2cab3/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/1463556a47b0b11e0e32553482070255/jetified-appcompat-resources-1.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/09c1773ed3597f8bec6064dc26d157be/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.transition:transition:1.2.0-rc01] /Users/datang/.gradle/caches/transforms-2/files-2.1/db0b3f6dc765ce05ef18aca40e9a5bee/transition-1.2.0-rc01/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.3.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/536a0e6924fd14451ea0f47abf81ff76/appcompat-1.3.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.4.1] /Users/datang/.gradle/caches/transforms-2/files-2.1/7aef650b2a3f43cba8ffe27d08b413c4/transition-1.4.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.media2:media2-session:1.2.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/ceed3f2a94aa97e10ce61a44d59bd533/jetified-media2-session-1.2.0/AndroidManifest.xml:17:1-36:12
 MERGED from [androidx.media2:media2-common:1.2.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/d9d6b835290ecf662a4cc412ea794478/jetified-media2-common-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.3.4] /Users/datang/.gradle/caches/transforms-2/files-2.1/8d9ac4f576feffd2558f0cc20fbb942d/fragment-1.3.4/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.2.3] /Users/datang/.gradle/caches/transforms-2/files-2.1/eeafb259c81cec61cfc15dcc1f30d062/jetified-activity-1.2.3/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.3.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/2efc05e976be65ba7f6f40769896581c/jetified-appcompat-resources-1.3.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/09c1773ed3597f8bec6064dc26d157be/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.4.1] /Users/datang/.gradle/caches/transforms-2/files-2.1/b6989a794145e8b5c8863d058c5a30a6/media-1.4.1/AndroidManifest.xml:17:1-30:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/ae39e38aa58f5c391f29a4bfad4a41a4/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/92d1f830d8a4f76d15ea1f849fb6f29f/loader-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.activity:activity:1.0.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/172ae1f46f014e6681a2cc350fa8b737/jetified-activity-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/61fd575f974e3d768efc2f6a143e0eae/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/986216458f3c0df423ee68e7f1177976/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.customview:customview:1.0.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/9ccab238727e236e8aff01a0f95cebe4/customview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.media:media:1.4.1] /Users/datang/.gradle/caches/transforms-2/files-2.1/b6989a794145e8b5c8863d058c5a30a6/media-1.4.1/AndroidManifest.xml:17:1-30:12
 MERGED from [androidx.core:core:1.8.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/8e86e615f21ac3758e97e94e18045107/core-1.8.0/AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.heifwriter:heifwriter:1.0.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/2560fdf84f2a217acc1cbbee8ca39174/heifwriter-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.tracing:tracing:1.0.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/6c6575c923e75933616af1a602db32e0/jetified-tracing-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/69ba5a98805d81d755806668ff70d04f/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/562e0ccd448997445377b189213109db/jetified-gifdecoder-4.11.0/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/datang/.gradle/caches/transforms-2/files-2.1/884708a9396f81808c0ac10f4b98ea32/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /Users/datang/.gradle/caches/transforms-2/files-2.1/8578375fbf5df5bbe65cca21a6cd6acf/lifecycle-runtime-2.3.1/AndroidManifest.xml:17:1-24:12
@@ -68,12 +68,14 @@ MERGED from [com.google.android.exoplayer:exoplayer-database:2.18.1] /Users/data
 MERGED from [com.google.android.exoplayer:exoplayer-common:2.18.1] /Users/datang/.gradle/caches/transforms-2/files-2.1/4c6bbace4f587ba3728cba0a446abcfb/jetified-exoplayer-common-2.18.1/AndroidManifest.xml:17:1-26:12
 MERGED from [com.huawei.hms:scanplus:2.1.0.300] /Users/datang/.gradle/caches/transforms-2/files-2.1/95f4eb155cc4d6f0097674db56e8bcb3/jetified-scanplus-2.1.0.300/AndroidManifest.xml:2:1-33:12
 MERGED from [com.huawei.hms:network-grs:4.0.20.301] /Users/datang/.gradle/caches/transforms-2/files-2.1/32e24c9aca6794eadf58e89f4ff52245/jetified-network-grs-4.0.20.301/AndroidManifest.xml:2:1-11:12
-MERGED from [com.huawei.android.hms:security-ssl:1.1.5.301] /Users/datang/.gradle/caches/transforms-2/files-2.1/b09211cae07b1ca03673ec2bb7d2703b/jetified-security-ssl-1.1.5.301/AndroidManifest.xml:2:1-15:12
-MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/8d7928c9f52af5f964a662866fcebb3e/jetified-savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.huawei.android.hms:security-ssl:1.1.5.301] /Users/datang/.gradle/caches/transforms-2/files-2.1/22cc16f3f0aa0ae8038b256bab8e31c4/jetified-security-ssl-1.1.5.301/AndroidManifest.xml:2:1-15:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/69ba5a98805d81d755806668ff70d04f/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/datang/.gradle/caches/transforms-2/files-2.1/ac36d2f5b16183d06412574790e770da/jetified-lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/1f318d44f7cc290e64a3a0110f6d1b61/jetified-savedstate-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /Users/datang/.gradle/caches/transforms-2/files-2.1/42acb13871cd74f812098a2f4b7b2625/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/8108bc8c5f35a568f919dbab3be0e175/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/403e5322101e882ebd13d146c86f92ca/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/datang/.gradle/caches/transforms-2/files-2.1/8d73be0136932816dbee106487237cd9/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/16e110bf603f94cf61f970a18f3907e3/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/9a0e475eb211916dfa0da9de1d6c02a3/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/9ed314abc3df537a2d48c1cb6d65998e/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.alipay.sdk:alipaysdk-android:15.8.11] /Users/datang/.gradle/caches/transforms-2/files-2.1/4dab6250a091f1661283cf04f47c191f/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:2:1-78:12
 MERGED from [com.journeyapps:zxing-android-embedded:4.3.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/a78aae525eeee02d8298c1969129f4cf/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:17:1-56:12
@@ -95,11 +97,11 @@ INJECTED from /Users/datang/StudioProjects/new_recook/android/app/src/debug/Andr
 		INJECTED from /Users/datang/StudioProjects/new_recook/android/app/src/debug/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/datang/StudioProjects/new_recook/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/datang/StudioProjects/new_recook/android/app/src/main/AndroidManifest.xml:1:1-65:12
+		ADDED from /Users/datang/StudioProjects/new_recook/android/app/src/main/AndroidManifest.xml:1:1-69:12
 		INJECTED from /Users/datang/StudioProjects/new_recook/android/app/src/debug/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/datang/StudioProjects/new_recook/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/datang/StudioProjects/new_recook/android/app/src/main/AndroidManifest.xml:1:1-65:12
+		ADDED from /Users/datang/StudioProjects/new_recook/android/app/src/main/AndroidManifest.xml:1:1-69:12
 		INJECTED from /Users/datang/StudioProjects/new_recook/android/app/src/debug/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/datang/StudioProjects/new_recook/android/app/src/main/AndroidManifest.xml:1:11-69
@@ -160,7 +162,7 @@ ADDED from /Users/datang/StudioProjects/new_recook/android/app/src/main/AndroidM
 	android:name
 		ADDED from /Users/datang/StudioProjects/new_recook/android/app/src/main/AndroidManifest.xml:25:22-69
 application
-ADDED from /Users/datang/StudioProjects/new_recook/android/app/src/main/AndroidManifest.xml:26:4-64:19
+ADDED from /Users/datang/StudioProjects/new_recook/android/app/src/main/AndroidManifest.xml:26:4-68:19
 MERGED from [:fluwx] /Users/datang/StudioProjects/new_recook/build/fluwx/intermediates/library_manifest/debug/AndroidManifest.xml:17:5-64:19
 MERGED from [:fluwx] /Users/datang/StudioProjects/new_recook/build/fluwx/intermediates/library_manifest/debug/AndroidManifest.xml:17:5-64:19
 MERGED from [:image_picker_android] /Users/datang/StudioProjects/new_recook/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-17:19
@@ -177,8 +179,8 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/data
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/datang/.gradle/caches/transforms-2/files-2.1/884708a9396f81808c0ac10f4b98ea32/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
 MERGED from [com.huawei.hms:scanplus:2.1.0.300] /Users/datang/.gradle/caches/transforms-2/files-2.1/95f4eb155cc4d6f0097674db56e8bcb3/jetified-scanplus-2.1.0.300/AndroidManifest.xml:13:5-31:19
 MERGED from [com.huawei.hms:scanplus:2.1.0.300] /Users/datang/.gradle/caches/transforms-2/files-2.1/95f4eb155cc4d6f0097674db56e8bcb3/jetified-scanplus-2.1.0.300/AndroidManifest.xml:13:5-31:19
-MERGED from [com.huawei.android.hms:security-ssl:1.1.5.301] /Users/datang/.gradle/caches/transforms-2/files-2.1/b09211cae07b1ca03673ec2bb7d2703b/jetified-security-ssl-1.1.5.301/AndroidManifest.xml:9:5-13:19
-MERGED from [com.huawei.android.hms:security-ssl:1.1.5.301] /Users/datang/.gradle/caches/transforms-2/files-2.1/b09211cae07b1ca03673ec2bb7d2703b/jetified-security-ssl-1.1.5.301/AndroidManifest.xml:9:5-13:19
+MERGED from [com.huawei.android.hms:security-ssl:1.1.5.301] /Users/datang/.gradle/caches/transforms-2/files-2.1/22cc16f3f0aa0ae8038b256bab8e31c4/jetified-security-ssl-1.1.5.301/AndroidManifest.xml:9:5-13:19
+MERGED from [com.huawei.android.hms:security-ssl:1.1.5.301] /Users/datang/.gradle/caches/transforms-2/files-2.1/22cc16f3f0aa0ae8038b256bab8e31c4/jetified-security-ssl-1.1.5.301/AndroidManifest.xml:9:5-13:19
 MERGED from [com.alipay.sdk:alipaysdk-android:15.8.11] /Users/datang/.gradle/caches/transforms-2/files-2.1/4dab6250a091f1661283cf04f47c191f/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:32:5-76:19
 MERGED from [com.alipay.sdk:alipaysdk-android:15.8.11] /Users/datang/.gradle/caches/transforms-2/files-2.1/4dab6250a091f1661283cf04f47c191f/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:32:5-76:19
 MERGED from [com.journeyapps:zxing-android-embedded:4.3.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/a78aae525eeee02d8298c1969129f4cf/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:46:5-54:19
@@ -233,12 +235,20 @@ category#android.intent.category.LAUNCHER
 ADDED from /Users/datang/StudioProjects/new_recook/android/app/src/main/AndroidManifest.xml:56:17-76
 	android:name
 		ADDED from /Users/datang/StudioProjects/new_recook/android/app/src/main/AndroidManifest.xml:56:27-74
-meta-data#flutterEmbedding
-ADDED from /Users/datang/StudioProjects/new_recook/android/app/src/main/AndroidManifest.xml:61:9-63:33
-	android:value
-		ADDED from /Users/datang/StudioProjects/new_recook/android/app/src/main/AndroidManifest.xml:63:13-30
+activity#com.yalantis.ucrop.UCropActivity
+ADDED from /Users/datang/StudioProjects/new_recook/android/app/src/main/AndroidManifest.xml:61:8-64:74
+	android:screenOrientation
+		ADDED from /Users/datang/StudioProjects/new_recook/android/app/src/main/AndroidManifest.xml:63:16-52
+	android:theme
+		ADDED from /Users/datang/StudioProjects/new_recook/android/app/src/main/AndroidManifest.xml:64:16-72
 	android:name
-		ADDED from /Users/datang/StudioProjects/new_recook/android/app/src/main/AndroidManifest.xml:62:13-44
+		ADDED from /Users/datang/StudioProjects/new_recook/android/app/src/main/AndroidManifest.xml:62:16-63
+meta-data#flutterEmbedding
+ADDED from /Users/datang/StudioProjects/new_recook/android/app/src/main/AndroidManifest.xml:65:8-67:33
+	android:value
+		ADDED from /Users/datang/StudioProjects/new_recook/android/app/src/main/AndroidManifest.xml:67:13-30
+	android:name
+		ADDED from /Users/datang/StudioProjects/new_recook/android/app/src/main/AndroidManifest.xml:66:13-44
 uses-sdk
 INJECTED from /Users/datang/StudioProjects/new_recook/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/datang/StudioProjects/new_recook/android/app/src/main/AndroidManifest.xml
@@ -257,16 +267,18 @@ MERGED from [:sqflite] /Users/datang/StudioProjects/new_recook/build/sqflite/int
 MERGED from [:sqflite] /Users/datang/StudioProjects/new_recook/build/sqflite/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:tobias] /Users/datang/StudioProjects/new_recook/build/tobias/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:tobias] /Users/datang/StudioProjects/new_recook/build/tobias/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:webview_flutter] /Users/datang/StudioProjects/new_recook/build/webview_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:webview_flutter] /Users/datang/StudioProjects/new_recook/build/webview_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:scan] /Users/datang/StudioProjects/new_recook/build/scan/intermediates/library_manifest/debug/AndroidManifest.xml:6:5-8:67
 MERGED from [:scan] /Users/datang/StudioProjects/new_recook/build/scan/intermediates/library_manifest/debug/AndroidManifest.xml:6:5-8:67
 MERGED from [:path_provider_android] /Users/datang/StudioProjects/new_recook/build/path_provider_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:path_provider_android] /Users/datang/StudioProjects/new_recook/build/path_provider_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:amap_flutter_location] /Users/datang/StudioProjects/new_recook/build/amap_flutter_location/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:amap_flutter_location] /Users/datang/StudioProjects/new_recook/build/amap_flutter_location/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:wakelock] /Users/datang/StudioProjects/new_recook/build/wakelock/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:wakelock] /Users/datang/StudioProjects/new_recook/build/wakelock/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:image_cropper] /Users/datang/StudioProjects/new_recook/build/image_cropper/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:image_cropper] /Users/datang/StudioProjects/new_recook/build/image_cropper/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:webview_flutter_android] /Users/datang/StudioProjects/new_recook/build/webview_flutter_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:webview_flutter_android] /Users/datang/StudioProjects/new_recook/build/webview_flutter_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:shared_preferences_android] /Users/datang/StudioProjects/new_recook/build/shared_preferences_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:shared_preferences_android] /Users/datang/StudioProjects/new_recook/build/shared_preferences_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:just_audio] /Users/datang/StudioProjects/new_recook/build/just_audio/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
@@ -297,10 +309,8 @@ MERGED from [androidx.multidex:multidex:2.0.0] /Users/datang/.gradle/caches/tran
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/a2f650a70b204393ba1526e0273d563e/multidex-2.0.0/AndroidManifest.xml:20:5-43
 MERGED from [com.tencent.mm.opensdk:wechat-sdk-android-without-mta:6.8.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/7127593a2f4dbbadfcbf2714b074f5c4/jetified-wechat-sdk-android-without-mta-6.8.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.tencent.mm.opensdk:wechat-sdk-android-without-mta:6.8.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/7127593a2f4dbbadfcbf2714b074f5c4/jetified-wechat-sdk-android-without-mta-6.8.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.github.yalantis:ucrop:2.2.6] /Users/datang/.gradle/caches/transforms-2/files-2.1/08606f6bbb85756e081e3e32d4dc23ed/jetified-ucrop-2.2.6/AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.yalantis:ucrop:2.2.6] /Users/datang/.gradle/caches/transforms-2/files-2.1/08606f6bbb85756e081e3e32d4dc23ed/jetified-ucrop-2.2.6/AndroidManifest.xml:7:5-9:41
-MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/062c584e7105f32bea72d749c12db8a1/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/062c584e7105f32bea72d749c12db8a1/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.yalantis:ucrop:2.2.8] /Users/datang/.gradle/caches/transforms-2/files-2.1/dc5f536b86d379e1e69db518b4774c3b/jetified-ucrop-2.2.8/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.yalantis:ucrop:2.2.8] /Users/datang/.gradle/caches/transforms-2/files-2.1/dc5f536b86d379e1e69db518b4774c3b/jetified-ucrop-2.2.8/AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.webkit:webkit:1.0.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/385d6fc0f66ca457efb199b0b3a6ac61/webkit-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.webkit:webkit:1.0.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/385d6fc0f66ca457efb199b0b3a6ac61/webkit-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/7801b1660b3829ad4bb5f3a2452c817b/jetified-glide-4.11.0/AndroidManifest.xml:6:5-8:41
@@ -315,40 +325,40 @@ MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.18.1] /Use
 MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.18.1] /Users/datang/.gradle/caches/transforms-2/files-2.1/2e56c95d2cf841b6514e0f8a5bd2e943/jetified-exoplayer-smoothstreaming-2.18.1/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.exoplayer:exoplayer-core:2.18.1] /Users/datang/.gradle/caches/transforms-2/files-2.1/dcddb311c85ad4ba0fb094e649f15a67/jetified-exoplayer-core-2.18.1/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.exoplayer:exoplayer-core:2.18.1] /Users/datang/.gradle/caches/transforms-2/files-2.1/dcddb311c85ad4ba0fb094e649f15a67/jetified-exoplayer-core-2.18.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.1.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/8601dd65e0c6893d5abc5ccde1e2cab3/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.1.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/8601dd65e0c6893d5abc5ccde1e2cab3/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/1463556a47b0b11e0e32553482070255/jetified-appcompat-resources-1.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/1463556a47b0b11e0e32553482070255/jetified-appcompat-resources-1.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/09c1773ed3597f8bec6064dc26d157be/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/09c1773ed3597f8bec6064dc26d157be/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.transition:transition:1.2.0-rc01] /Users/datang/.gradle/caches/transforms-2/files-2.1/db0b3f6dc765ce05ef18aca40e9a5bee/transition-1.2.0-rc01/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.transition:transition:1.2.0-rc01] /Users/datang/.gradle/caches/transforms-2/files-2.1/db0b3f6dc765ce05ef18aca40e9a5bee/transition-1.2.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.3.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/536a0e6924fd14451ea0f47abf81ff76/appcompat-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.3.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/536a0e6924fd14451ea0f47abf81ff76/appcompat-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.4.1] /Users/datang/.gradle/caches/transforms-2/files-2.1/7aef650b2a3f43cba8ffe27d08b413c4/transition-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.4.1] /Users/datang/.gradle/caches/transforms-2/files-2.1/7aef650b2a3f43cba8ffe27d08b413c4/transition-1.4.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.media2:media2-session:1.2.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/ceed3f2a94aa97e10ce61a44d59bd533/jetified-media2-session-1.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.media2:media2-session:1.2.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/ceed3f2a94aa97e10ce61a44d59bd533/jetified-media2-session-1.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.media2:media2-common:1.2.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/d9d6b835290ecf662a4cc412ea794478/jetified-media2-common-1.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.media2:media2-common:1.2.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/d9d6b835290ecf662a4cc412ea794478/jetified-media2-common-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.4] /Users/datang/.gradle/caches/transforms-2/files-2.1/8d9ac4f576feffd2558f0cc20fbb942d/fragment-1.3.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.4] /Users/datang/.gradle/caches/transforms-2/files-2.1/8d9ac4f576feffd2558f0cc20fbb942d/fragment-1.3.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.3] /Users/datang/.gradle/caches/transforms-2/files-2.1/eeafb259c81cec61cfc15dcc1f30d062/jetified-activity-1.2.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.3] /Users/datang/.gradle/caches/transforms-2/files-2.1/eeafb259c81cec61cfc15dcc1f30d062/jetified-activity-1.2.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.3.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/2efc05e976be65ba7f6f40769896581c/jetified-appcompat-resources-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.3.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/2efc05e976be65ba7f6f40769896581c/jetified-appcompat-resources-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/09c1773ed3597f8bec6064dc26d157be/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/09c1773ed3597f8bec6064dc26d157be/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.4.1] /Users/datang/.gradle/caches/transforms-2/files-2.1/b6989a794145e8b5c8863d058c5a30a6/media-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.4.1] /Users/datang/.gradle/caches/transforms-2/files-2.1/b6989a794145e8b5c8863d058c5a30a6/media-1.4.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/ae39e38aa58f5c391f29a4bfad4a41a4/viewpager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/ae39e38aa58f5c391f29a4bfad4a41a4/viewpager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/92d1f830d8a4f76d15ea1f849fb6f29f/loader-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/92d1f830d8a4f76d15ea1f849fb6f29f/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.0.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/172ae1f46f014e6681a2cc350fa8b737/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.0.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/172ae1f46f014e6681a2cc350fa8b737/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/61fd575f974e3d768efc2f6a143e0eae/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/61fd575f974e3d768efc2f6a143e0eae/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/986216458f3c0df423ee68e7f1177976/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/986216458f3c0df423ee68e7f1177976/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.customview:customview:1.0.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/9ccab238727e236e8aff01a0f95cebe4/customview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.0.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/9ccab238727e236e8aff01a0f95cebe4/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.media:media:1.4.1] /Users/datang/.gradle/caches/transforms-2/files-2.1/b6989a794145e8b5c8863d058c5a30a6/media-1.4.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.media:media:1.4.1] /Users/datang/.gradle/caches/transforms-2/files-2.1/b6989a794145e8b5c8863d058c5a30a6/media-1.4.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.8.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/8e86e615f21ac3758e97e94e18045107/core-1.8.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.8.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/8e86e615f21ac3758e97e94e18045107/core-1.8.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.heifwriter:heifwriter:1.0.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/2560fdf84f2a217acc1cbbee8ca39174/heifwriter-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.heifwriter:heifwriter:1.0.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/2560fdf84f2a217acc1cbbee8ca39174/heifwriter-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.tracing:tracing:1.0.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/6c6575c923e75933616af1a602db32e0/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.tracing:tracing:1.0.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/6c6575c923e75933616af1a602db32e0/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/69ba5a98805d81d755806668ff70d04f/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/69ba5a98805d81d755806668ff70d04f/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/562e0ccd448997445377b189213109db/jetified-gifdecoder-4.11.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/562e0ccd448997445377b189213109db/jetified-gifdecoder-4.11.0/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/datang/.gradle/caches/transforms-2/files-2.1/884708a9396f81808c0ac10f4b98ea32/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
@@ -369,18 +379,22 @@ MERGED from [com.huawei.hms:scanplus:2.1.0.300] /Users/datang/.gradle/caches/tra
 MERGED from [com.huawei.hms:scanplus:2.1.0.300] /Users/datang/.gradle/caches/transforms-2/files-2.1/95f4eb155cc4d6f0097674db56e8bcb3/jetified-scanplus-2.1.0.300/AndroidManifest.xml:7:5-9:41
 MERGED from [com.huawei.hms:network-grs:4.0.20.301] /Users/datang/.gradle/caches/transforms-2/files-2.1/32e24c9aca6794eadf58e89f4ff52245/jetified-network-grs-4.0.20.301/AndroidManifest.xml:7:5-9:41
 MERGED from [com.huawei.hms:network-grs:4.0.20.301] /Users/datang/.gradle/caches/transforms-2/files-2.1/32e24c9aca6794eadf58e89f4ff52245/jetified-network-grs-4.0.20.301/AndroidManifest.xml:7:5-9:41
-MERGED from [com.huawei.android.hms:security-ssl:1.1.5.301] /Users/datang/.gradle/caches/transforms-2/files-2.1/b09211cae07b1ca03673ec2bb7d2703b/jetified-security-ssl-1.1.5.301/AndroidManifest.xml:7:5-43
-MERGED from [com.huawei.android.hms:security-ssl:1.1.5.301] /Users/datang/.gradle/caches/transforms-2/files-2.1/b09211cae07b1ca03673ec2bb7d2703b/jetified-security-ssl-1.1.5.301/AndroidManifest.xml:7:5-43
-MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/8d7928c9f52af5f964a662866fcebb3e/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/8d7928c9f52af5f964a662866fcebb3e/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.huawei.android.hms:security-ssl:1.1.5.301] /Users/datang/.gradle/caches/transforms-2/files-2.1/22cc16f3f0aa0ae8038b256bab8e31c4/jetified-security-ssl-1.1.5.301/AndroidManifest.xml:7:5-43
+MERGED from [com.huawei.android.hms:security-ssl:1.1.5.301] /Users/datang/.gradle/caches/transforms-2/files-2.1/22cc16f3f0aa0ae8038b256bab8e31c4/jetified-security-ssl-1.1.5.301/AndroidManifest.xml:7:5-43
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/69ba5a98805d81d755806668ff70d04f/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/69ba5a98805d81d755806668ff70d04f/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/datang/.gradle/caches/transforms-2/files-2.1/ac36d2f5b16183d06412574790e770da/jetified-lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/datang/.gradle/caches/transforms-2/files-2.1/ac36d2f5b16183d06412574790e770da/jetified-lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/1f318d44f7cc290e64a3a0110f6d1b61/jetified-savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/1f318d44f7cc290e64a3a0110f6d1b61/jetified-savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /Users/datang/.gradle/caches/transforms-2/files-2.1/42acb13871cd74f812098a2f4b7b2625/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /Users/datang/.gradle/caches/transforms-2/files-2.1/42acb13871cd74f812098a2f4b7b2625/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/8108bc8c5f35a568f919dbab3be0e175/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/8108bc8c5f35a568f919dbab3be0e175/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/403e5322101e882ebd13d146c86f92ca/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/403e5322101e882ebd13d146c86f92ca/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/datang/.gradle/caches/transforms-2/files-2.1/8d73be0136932816dbee106487237cd9/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/datang/.gradle/caches/transforms-2/files-2.1/8d73be0136932816dbee106487237cd9/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/16e110bf603f94cf61f970a18f3907e3/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/16e110bf603f94cf61f970a18f3907e3/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/9a0e475eb211916dfa0da9de1d6c02a3/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/9a0e475eb211916dfa0da9de1d6c02a3/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/9ed314abc3df537a2d48c1cb6d65998e/interpolator-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/datang/.gradle/caches/transforms-2/files-2.1/9ed314abc3df537a2d48c1cb6d65998e/interpolator-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.alipay.sdk:alipaysdk-android:15.8.11] /Users/datang/.gradle/caches/transforms-2/files-2.1/4dab6250a091f1661283cf04f47c191f/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:7:5-44
@@ -662,13 +676,13 @@ ADDED from [com.huawei.hms:scanplus:2.1.0.300] /Users/datang/.gradle/caches/tran
 	android:name
 		ADDED from [com.huawei.hms:scanplus:2.1.0.300] /Users/datang/.gradle/caches/transforms-2/files-2.1/95f4eb155cc4d6f0097674db56e8bcb3/jetified-scanplus-2.1.0.300/AndroidManifest.xml:30:19-75
 uses-library#org.apache.http.legacy
-ADDED from [com.huawei.android.hms:security-ssl:1.1.5.301] /Users/datang/.gradle/caches/transforms-2/files-2.1/b09211cae07b1ca03673ec2bb7d2703b/jetified-security-ssl-1.1.5.301/AndroidManifest.xml:10:9-12:40
+ADDED from [com.huawei.android.hms:security-ssl:1.1.5.301] /Users/datang/.gradle/caches/transforms-2/files-2.1/22cc16f3f0aa0ae8038b256bab8e31c4/jetified-security-ssl-1.1.5.301/AndroidManifest.xml:10:9-12:40
 MERGED from [com.alipay.sdk:alipaysdk-android:15.8.11] /Users/datang/.gradle/caches/transforms-2/files-2.1/4dab6250a091f1661283cf04f47c191f/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:33:9-35:40
 MERGED from [com.alipay.sdk:alipaysdk-android:15.8.11] /Users/datang/.gradle/caches/transforms-2/files-2.1/4dab6250a091f1661283cf04f47c191f/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:33:9-35:40
 	android:required
-		ADDED from [com.huawei.android.hms:security-ssl:1.1.5.301] /Users/datang/.gradle/caches/transforms-2/files-2.1/b09211cae07b1ca03673ec2bb7d2703b/jetified-security-ssl-1.1.5.301/AndroidManifest.xml:12:13-37
+		ADDED from [com.huawei.android.hms:security-ssl:1.1.5.301] /Users/datang/.gradle/caches/transforms-2/files-2.1/22cc16f3f0aa0ae8038b256bab8e31c4/jetified-security-ssl-1.1.5.301/AndroidManifest.xml:12:13-37
 	android:name
-		ADDED from [com.huawei.android.hms:security-ssl:1.1.5.301] /Users/datang/.gradle/caches/transforms-2/files-2.1/b09211cae07b1ca03673ec2bb7d2703b/jetified-security-ssl-1.1.5.301/AndroidManifest.xml:11:13-50
+		ADDED from [com.huawei.android.hms:security-ssl:1.1.5.301] /Users/datang/.gradle/caches/transforms-2/files-2.1/22cc16f3f0aa0ae8038b256bab8e31c4/jetified-security-ssl-1.1.5.301/AndroidManifest.xml:11:13-50
 intent#action:name:*+data:scheme:tbopen
 ADDED from [com.alipay.sdk:alipaysdk-android:15.8.11] /Users/datang/.gradle/caches/transforms-2/files-2.1/4dab6250a091f1661283cf04f47c191f/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:10:9-14:18
 action#*

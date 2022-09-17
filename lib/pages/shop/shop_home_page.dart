@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 
+import 'package:bot_toast/bot_toast.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -11,9 +12,12 @@ import 'package:new_recook/constants/styles.dart';
 import 'package:new_recook/constants/api.dart';
 import 'package:new_recook/extensions/num_ext.dart';
 import 'package:new_recook/gen/assets.gen.dart';
+import 'package:new_recook/models/goods/category_model.dart';
 import 'package:new_recook/models/home/banner_list_model.dart';
 import 'package:new_recook/models/home/home_weather_model.dart';
 import 'package:new_recook/models/home/king_coin_list_model.dart';
+import 'package:new_recook/models/home/promotion_list_model.dart';
+import 'package:new_recook/pages/shop/classify_page.dart';
 import 'package:new_recook/pages/shop/home_search_page.dart';
 import 'package:new_recook/pages/shop/scan/barcodeScan.dart';
 import 'package:new_recook/pages/shop/weather/home_weather_view.dart';
@@ -36,6 +40,8 @@ import 'package:get/get.dart' hide Response;
 import 'package:velocity_x/velocity_x.dart';
 import '../../widget/button/img_button.dart';
 import 'animated_home_background.dart';
+import 'function/activity_goods_page.dart';
+import 'function/aku_college_page.dart';
 
 class ShopHomePage extends StatefulWidget {
   const ShopHomePage({Key? key}) : super(key: key);
@@ -44,7 +50,7 @@ class ShopHomePage extends StatefulWidget {
   _ShopHomePageState createState() => _ShopHomePageState();
 }
 
-class _ShopHomePageState extends State<ShopHomePage> {
+class _ShopHomePageState extends State<ShopHomePage> with TickerProviderStateMixin {
   ///局部刷新
   final GlobalKey<AnimatedHomeBackgroundState> _animatedBackgroundState =
       GlobalKey<AnimatedHomeBackgroundState>();
@@ -75,6 +81,8 @@ class _ShopHomePageState extends State<ShopHomePage> {
   GSRefreshController? _gsRefreshController;
   ScrollController? _sliverListController;
   List<BannerModel>? _bannerList = [];
+  List<Promotion>? _promotionList = [];
+  TabController? _tabController;
   List<KingCoinListModel>? kingCoinListModelList;
   Map? _activityMap;
   late StateSetter _bannerState;
@@ -83,7 +91,7 @@ class _ShopHomePageState extends State<ShopHomePage> {
   @override
   void initState() {
     super.initState();
-
+    _tabController = TabController(length: _promotionList!.length, vsync: this);
     Future.delayed(Duration.zero, () async {
       bool location = await Permission.location.isGranted;
       if (Platform.isIOS||location == true) {
@@ -109,13 +117,17 @@ class _ShopHomePageState extends State<ShopHomePage> {
         KingCoin(
             id: 1,
             url: "/photo/20220719/7f750c3890d79e8bcac665cc9ee93087.png",
-            name: "京东优选")
+            name: "阿库学院",
+          kingName: KingName(name:"阿库学院" )
+        )
       ]),
       KingCoinListModel(data: [
         KingCoin(
             id: 1,
             url: "/photo/20220719/7f750c3890d79e8bcac665cc9ee93087.png",
-            name: "京东优选")
+            name: "京东优选",
+            kingName: KingName(name:"热销榜单" )
+        )
       ]),
       KingCoinListModel(data: [
         KingCoin(
@@ -460,16 +472,6 @@ class _ShopHomePageState extends State<ShopHomePage> {
                   HomeWeatherWidget(
                     backgroundColor: Colors.white.withAlpha(0),
                     homeWeatherModel:_homeWeatherModel
-                    // HomeWeatherModel(
-                    //     tem: '38',
-                    //     tem1: '39',
-                    //     tem2: '27',
-                    //     wea: '多云',
-                    //     weaImg: 'yun',
-                    //     humidity: '42%',
-                    //     air: '40',
-                    //     airLevel: '优',
-                    //     week: '星期二'),
                   ),
                   _bannerView(),
                   _buildGoodsCards(),
@@ -521,13 +523,6 @@ class _ShopHomePageState extends State<ShopHomePage> {
               return Image.asset(Assets.images.placeholderNew2x1A.path, fit: BoxFit.fill,);
             },
           )
-          //
-          // ExtendedImage.network(
-          //         Api.getImgUrl(item.logoUrl),
-          //         fit: BoxFit.fill,
-          //         enableLoadState: true,
-          //       )
-          // CustomCacheImage(imageUrl: Api.getImgUrl(item.logoUrl),fit: BoxFit.fill, height: rSize(300),width: MediaQuery.of(context).size.width,)
               : Image.asset(
             Assets.images.placeholderNew2x1A.path,
             fit: BoxFit.fitWidth,
@@ -877,7 +872,25 @@ class _ShopHomePageState extends State<ShopHomePage> {
   PreferredSize _preferredSize() {
     return PreferredSize(
       preferredSize: Size.fromHeight(tabbarHeight),
-      child: Container(),
+      child: Container(
+        alignment: Alignment.center,
+        color: AppColor.frenchColor,
+        // child: HomePageTabbar(
+        //   promotionList: _promotionList,
+        //   timerJump: (index) {
+        //     //_tabIndex = index;
+        //     _homeCountdownController!.indexChange(index);
+        //     // 定时任务回调
+        //     _tabController!.animateTo(index);
+        //     //_getPromotionGoodsList(_promotionList![index].id);
+        //   },
+        //   clickItem: (index) {
+        //     _homeCountdownController!.indexChange(index);
+        //     //_getPromotionGoodsList(_promotionList![index].id);
+        //   },
+        //   tabController: _tabController,
+        // ),
+      ),
     );
   }
 
@@ -1057,6 +1070,7 @@ class _ShopHomePageState extends State<ShopHomePage> {
       case '一键邀请':
         break;
       case '热销榜单':
+        Get.to(()=>ActivityGoodsPage(type: 1,));
         break;
       case '进口专区':
         break;
@@ -1067,6 +1081,7 @@ class _ShopHomePageState extends State<ShopHomePage> {
       case 'VIP权益':
         break;
       case '阿库学院':
+        Get.to(()=>AkuCollegePage());
         break;
       case '家居生活':
         break;
@@ -1158,7 +1173,65 @@ class _ShopHomePageState extends State<ShopHomePage> {
       padding: EdgeInsets.zero,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
       materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-      onPressed: () async {},
+      onPressed: () async {
+        var cancel = BotToast.showLoading();
+        cancel();
+        Get.to(() => ClassifyPage(data: [
+          FirstCategory(
+            name: '日用百货',
+            sub: [
+              SecondCategory(
+                1,'枕头枕巾',2,''
+              ),
+              SecondCategory(
+                  1,'烧烤烘焙',2,''
+              ),
+              SecondCategory(
+                  1,'车品',2,''
+              ),
+              SecondCategory(
+                  1,'厨房收纳',2,''
+              ),
+            ]
+          ),
+          FirstCategory(
+              name: '酒饮冲调',
+              sub: [
+                SecondCategory(
+                    1,'酒类',2,''
+                ),
+                SecondCategory(
+                    1,'牛奶饮料',2,''
+                ),
+                SecondCategory(
+                    1,'茗茶',2,''
+                ),
+                SecondCategory(
+                    1,'麦片谷物',2,''
+                ),
+              ]
+          ),
+          FirstCategory(
+              name: '休闲美食',
+              sub: [
+                SecondCategory(
+                    1,'坚果炒货',2,''
+                ),
+                SecondCategory(
+                    1,'面包蛋糕',2,''
+                ),
+                SecondCategory(
+                    1,'饼干薯片',2,''
+                ),
+                SecondCategory(
+                    1,'肉蒲熟食',2,''
+                ),
+              ]
+          )
+        ],
+        initValue: name,
+        ));
+      },
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [

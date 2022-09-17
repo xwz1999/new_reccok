@@ -41,7 +41,7 @@ class _InputBarcodePageState extends State<InputBarcodePage> {
 
   _bodyWidget() {
     double width = MediaQuery.of(context).size.width;
-    Color buttonColor = Color(0xffE98787);
+    Color buttonColor = Color(0xFFDB2D2D);
     return Container(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
@@ -55,6 +55,7 @@ class _InputBarcodePageState extends State<InputBarcodePage> {
               style: TextStyle(color: Colors.black, fontSize: 44.sp),
             ),
           ),
+          20.hb,
           inputWidget(),
           Container(
             padding: EdgeInsets.only(
@@ -87,11 +88,13 @@ class _InputBarcodePageState extends State<InputBarcodePage> {
             TextReButton(
               height: 72.w,
               text: "切换扫描",
-              style: TextStyle(fontSize: 32.sp,color: Colors.white),
+              style: TextStyle(fontSize: 32.sp,color: buttonColor),
               boxDecoration: BoxDecoration(
                 border:  Border.all(
                   color: buttonColor,
+                  
                 ),
+                borderRadius: BorderRadius.circular(36.w)
               ),
               onPressed: (){
                 Get.off(()=>BarcodeScanPage());
@@ -107,11 +110,12 @@ class _InputBarcodePageState extends State<InputBarcodePage> {
                   TextReButton(
                     height: 72.w,
                     text: "返回首页",
-                    style: TextStyle(fontSize: 32.sp,color: Colors.white),
+                    style: TextStyle(fontSize: 32.sp,color: buttonColor),
                     boxDecoration: BoxDecoration(
                       border:  Border.all(
                         color: buttonColor,
                       ),
+                        borderRadius: BorderRadius.circular(36.w)
                     ),
                     onPressed: (){
                       Navigator.pop(context);
@@ -143,9 +147,7 @@ class _InputBarcodePageState extends State<InputBarcodePage> {
                   style: TextStyle(color: Colors.black, fontSize: 16 * 2.sp),
                 ),
               ),
-              Container(
-                width: 15,
-              ),
+
               Expanded(
                   child: Container(
                 height: 60,
@@ -156,6 +158,7 @@ class _InputBarcodePageState extends State<InputBarcodePage> {
                   },
                   controller: _textEditcontroller,
                   placeholder: "请输入条码",
+                  placeholderStyle: TextStyle(fontSize: 24.sp,color: Color(0xFFcccccc)),
                   decoration: BoxDecoration(),
                   maxLength: 13,
                   maxLines: 1,

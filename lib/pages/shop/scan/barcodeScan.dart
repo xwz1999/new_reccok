@@ -4,9 +4,11 @@ import 'package:flutter/services.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:just_audio/just_audio.dart';
 import 'package:new_recook/gen/assets.gen.dart';
+import 'package:new_recook/models/home/scan_result_model.dart';
 import 'package:new_recook/pages/shop/scan/fail_barcode_page.dart';
 import 'package:new_recook/pages/shop/scan/input_barcode_page.dart';
 import 'package:new_recook/pages/shop/scan/photos_fail_barcode_page.dart';
+import 'package:new_recook/pages/shop/scan/qr_scaner_result_page.dart';
 import 'package:new_recook/utils/alert.dart';
 import 'package:new_recook/utils/headers.dart';
 import 'package:new_recook/utils/image_utils.dart';
@@ -124,14 +126,14 @@ class _BarcodeScanPageState extends State<BarcodeScanPage> {
 
                         if (Platform.isIOS) {
                           var image =
-                          await picker.getImage(source: ImageSource.gallery);
+                          await picker.pickImage(source:  ImageSource.gallery);
                           if (image == null) {
-                            controller.toggleTorchMode();
+                            //controller.toggleTorchMode();
                             return;
                           }
                           File? cropFile = await ImageUtils.cropImage(File(image.path));
                           if (cropFile == null) {
-                            controller.toggleTorchMode();
+                            //controller.toggleTorchMode();
                             return;
                           }
                           File imageFile = cropFile;
@@ -141,7 +143,7 @@ class _BarcodeScanPageState extends State<BarcodeScanPage> {
 
                           if (TextUtils.isEmpty(rest)) {
                             BotToast.showText(text: '图片识别失败...');
-                            controller.toggleTorchMode();
+                            //controller.toggleTorchMode();
 
                           } else {
                             onScan(rest, image: imageFile);
@@ -168,7 +170,7 @@ class _BarcodeScanPageState extends State<BarcodeScanPage> {
                               items: ["残忍拒绝"],
                               listener: (index) {
                                 Alert.dismiss(context);
-                                controller.toggleTorchMode();
+                                //controller.toggleTorchMode();
 
                               },
                               deleteItem: "立即授权",
@@ -183,14 +185,14 @@ class _BarcodeScanPageState extends State<BarcodeScanPage> {
                                   return;
                                 } else {
                                   var image =
-                                  await picker.getImage(source: ImageSource.gallery);
+                                  await picker.pickImage(source: ImageSource.gallery);
                                   if (image == null) {
-                                    controller.toggleTorchMode();
+                                    //controller.toggleTorchMode();
                                     return;
                                   }
                                   File? cropFile = await ImageUtils.cropImage(File(image.path));
                                   if (cropFile == null) {
-                                    controller.toggleTorchMode();
+                                    //controller.toggleTorchMode();
                                     return;
                                   }
                                   File imageFile = cropFile;
@@ -200,7 +202,7 @@ class _BarcodeScanPageState extends State<BarcodeScanPage> {
 
                                   if (TextUtils.isEmpty(rest)) {
                                     BotToast.showText(text: '图片识别失败...');
-                                    controller.toggleTorchMode();
+                                   // controller.toggleTorchMode();
                                   } else {
                                     onScan(rest, image: imageFile);
                                   }
@@ -215,14 +217,14 @@ class _BarcodeScanPageState extends State<BarcodeScanPage> {
 
 
                           var image =
-                          await picker.getImage(source: ImageSource.gallery);
+                          await picker.pickImage(source: ImageSource.gallery);
                           if (image == null) {
-                            controller.toggleTorchMode();
+                            //controller.toggleTorchMode();
                             return;
                           }
                           File? cropFile = await ImageUtils.cropImage(File(image.path));
                           if (cropFile == null) {
-                            controller.toggleTorchMode();
+                            //controller.toggleTorchMode();
                             return;
                           }
 
@@ -232,7 +234,7 @@ class _BarcodeScanPageState extends State<BarcodeScanPage> {
 
                           if (TextUtils.isEmpty(rest)) {
                             BotToast.showText(text: '图片识别失败...');
-                            controller.toggleTorchMode();
+                            //controller.toggleTorchMode();
                           } else {
                             onScan(rest, image: imageFile);
                           }
@@ -315,6 +317,14 @@ class _BarcodeScanPageState extends State<BarcodeScanPage> {
     //   ),
     // );
     // return;
+
+    Get.off(
+          () => QRScarerResultPage(
+        model: ScanResultModel(
+          0,'','草莓味500ml','蒙牛旗舰店','','李子园牛奶',0,0,'',50,0
+        ),
+      )
+    );
   }
 
   pushToFailPage(String? code, String? message, File? image) {

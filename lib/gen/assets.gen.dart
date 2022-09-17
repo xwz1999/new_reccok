@@ -16,6 +16,10 @@ class $AssetsHomeGen {
   AssetGenImage get homeListTimes1 =>
       const AssetGenImage('assets/home/home_list_times_1.png');
 
+  /// File path: assets/home/ic_after_sale.png
+  AssetGenImage get icAfterSale =>
+      const AssetGenImage('assets/home/ic_after_sale.png');
+
   /// File path: assets/home/ic_baby.png
   AssetGenImage get icBaby => const AssetGenImage('assets/home/ic_baby.png');
 
@@ -36,6 +40,10 @@ class $AssetsHomeGen {
   AssetGenImage get icClothes =>
       const AssetGenImage('assets/home/ic_clothes.png');
 
+  /// File path: assets/home/ic_deliver.png
+  AssetGenImage get icDeliver =>
+      const AssetGenImage('assets/home/ic_deliver.png');
+
   /// File path: assets/home/ic_department.png
   AssetGenImage get icDepartment =>
       const AssetGenImage('assets/home/ic_department.png');
@@ -44,8 +52,15 @@ class $AssetsHomeGen {
   AssetGenImage get icElectricity =>
       const AssetGenImage('assets/home/ic_electricity.png');
 
+  /// File path: assets/home/ic_favor.png
+  AssetGenImage get icFavor => const AssetGenImage('assets/home/ic_favor.png');
+
   /// File path: assets/home/ic_food.png
   AssetGenImage get icFood => const AssetGenImage('assets/home/ic_food.png');
+
+  /// File path: assets/home/ic_footprint.png
+  AssetGenImage get icFootprint =>
+      const AssetGenImage('assets/home/ic_footprint.png');
 
   /// File path: assets/home/ic_furniture.png
   AssetGenImage get icFurniture =>
@@ -58,6 +73,18 @@ class $AssetsHomeGen {
   AssetGenImage get icImport =>
       const AssetGenImage('assets/home/ic_import.png');
 
+  /// File path: assets/home/ic_invoice.png
+  AssetGenImage get icInvoice =>
+      const AssetGenImage('assets/home/ic_invoice.png');
+
+  /// File path: assets/home/ic_location.png
+  AssetGenImage get icLocation =>
+      const AssetGenImage('assets/home/ic_location.png');
+
+  /// File path: assets/home/ic_logistics.png
+  AssetGenImage get icLogistics =>
+      const AssetGenImage('assets/home/ic_logistics.png');
+
   /// File path: assets/home/ic_medicalbox.png
   AssetGenImage get icMedicalbox =>
       const AssetGenImage('assets/home/ic_medicalbox.png');
@@ -65,6 +92,12 @@ class $AssetsHomeGen {
   /// File path: assets/home/ic_members.png
   AssetGenImage get icMembers =>
       const AssetGenImage('assets/home/ic_members.png');
+
+  /// File path: assets/home/ic_order.png
+  AssetGenImage get icOrder => const AssetGenImage('assets/home/ic_order.png');
+
+  /// File path: assets/home/ic_pay.png
+  AssetGenImage get icPay => const AssetGenImage('assets/home/ic_pay.png');
 
   /// File path: assets/home/ic_phone.png
   AssetGenImage get icPhone => const AssetGenImage('assets/home/ic_phone.png');
@@ -99,9 +132,40 @@ class $AssetsIconsGen {
   /// File path: assets/icons/app_icon.png
   AssetGenImage get appIcon => const AssetGenImage('assets/icons/app_icon.png');
 
+  /// File path: assets/icons/delete.png
+  AssetGenImage get delete => const AssetGenImage('assets/icons/delete.png');
+
   /// File path: assets/icons/home_tab_search.png
   AssetGenImage get homeTabSearch =>
       const AssetGenImage('assets/icons/home_tab_search.png');
+
+  /// File path: assets/icons/hot_sell_icon_more.png
+  AssetGenImage get hotSellIconMore =>
+      const AssetGenImage('assets/icons/hot_sell_icon_more.png');
+
+  /// File path: assets/icons/hot_sell_icon_one.png
+  AssetGenImage get hotSellIconOne =>
+      const AssetGenImage('assets/icons/hot_sell_icon_one.png');
+
+  /// File path: assets/icons/hot_sell_icon_three.png
+  AssetGenImage get hotSellIconThree =>
+      const AssetGenImage('assets/icons/hot_sell_icon_three.png');
+
+  /// File path: assets/icons/hot_sell_icon_two.png
+  AssetGenImage get hotSellIconTwo =>
+      const AssetGenImage('assets/icons/hot_sell_icon_two.png');
+
+  /// File path: assets/icons/icon_change_grid.png
+  AssetGenImage get iconChangeGrid =>
+      const AssetGenImage('assets/icons/icon_change_grid.png');
+
+  /// File path: assets/icons/icon_change_list.png
+  AssetGenImage get iconChangeList =>
+      const AssetGenImage('assets/icons/icon_change_list.png');
+
+  /// File path: assets/icons/icon_setting.png
+  AssetGenImage get iconSetting =>
+      const AssetGenImage('assets/icons/icon_setting.png');
 
   /// File path: assets/icons/last_month_icon.png
   AssetGenImage get lastMonthIcon =>
@@ -129,6 +193,9 @@ class $AssetsIconsGen {
 
   /// File path: assets/icons/search.png
   AssetGenImage get search => const AssetGenImage('assets/icons/search.png');
+
+  /// File path: assets/icons/share.png
+  AssetGenImage get share => const AssetGenImage('assets/icons/share.png');
 
   /// File path: assets/icons/shop_page_smile.png
   AssetGenImage get shopPageSmile =>
@@ -160,6 +227,9 @@ class $AssetsIconsGen {
 
   /// File path: assets/icons/totop.png
   AssetGenImage get totop => const AssetGenImage('assets/icons/totop.png');
+
+  /// File path: assets/icons/up_down.png
+  AssetGenImage get upDown => const AssetGenImage('assets/icons/up_down.png');
 }
 
 class $AssetsImagesGen {
@@ -169,8 +239,9 @@ class $AssetsImagesGen {
   AssetGenImage get homeRefreshHeader3 =>
       const AssetGenImage('assets/images/HomeRefreshHeader3.gif');
 
-  /// File path: assets/images/nodata.png
-  AssetGenImage get nodata => const AssetGenImage('assets/images/nodata.png');
+  /// File path: assets/images/img_no_data.png
+  AssetGenImage get imgNoData =>
+      const AssetGenImage('assets/images/img_no_data.png');
 
   /// File path: assets/images/placeholder_new_1x1_a.png
   AssetGenImage get placeholderNew1x1A =>
@@ -183,6 +254,14 @@ class $AssetsImagesGen {
   /// File path: assets/images/placeholder_new_2x1_a.png
   AssetGenImage get placeholderNew2x1A =>
       const AssetGenImage('assets/images/placeholder_new_2x1_a.png');
+
+  /// File path: assets/images/school_bg.png
+  AssetGenImage get schoolBg =>
+      const AssetGenImage('assets/images/school_bg.png');
+
+  /// File path: assets/images/sellout_bg.png
+  AssetGenImage get selloutBg =>
+      const AssetGenImage('assets/images/sellout_bg.png');
 }
 
 class $AssetsJsonGen {
@@ -190,6 +269,13 @@ class $AssetsJsonGen {
 
   /// File path: assets/json/weatherCity.json
   String get weatherCity => 'assets/json/weatherCity.json';
+}
+
+class $AssetsSoundGen {
+  const $AssetsSoundGen();
+
+  /// File path: assets/sound/recook_scan.mp3
+  String get recookScan => 'assets/sound/recook_scan.mp3';
 }
 
 class $AssetsWeatherGen {
@@ -289,6 +375,7 @@ class Assets {
   static const $AssetsIconsGen icons = $AssetsIconsGen();
   static const $AssetsImagesGen images = $AssetsImagesGen();
   static const $AssetsJsonGen json = $AssetsJsonGen();
+  static const $AssetsSoundGen sound = $AssetsSoundGen();
   static const $AssetsWeatherGen weather = $AssetsWeatherGen();
   static const $AssetsWeatherCakeGen weatherCake = $AssetsWeatherCakeGen();
   static const $AssetsWebpGen webp = $AssetsWebpGen();

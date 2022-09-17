@@ -49,7 +49,6 @@ class HomeSliverAppBarState extends State<HomeSliverAppBar> {
       elevation: 0,
       backgroundColor: _displayColor,
       flexibleSpace: widget.flexibleSpace,
-      collapsedHeight: kToolbarHeight + 10,
       expandedHeight: widget.expandedHeight,
       bottom: widget.bottom,
     );

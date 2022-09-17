@@ -12,16 +12,22 @@ import 'package:permission_handler/permission_handler.dart';
 import 'package:power_logger/power_logger.dart';
 
 class ImageUtils {
-  static Future<File?> cropImage(file) async {
-    File? croppedFile = await ImageCropper.cropImage(
+  static Future<File?> cropImage(File file) async {
+    CroppedFile? croppedFile = await ImageCropper().cropImage(
       sourcePath: file.path,
-      androidUiSettings: AndroidUiSettings(
+      aspectRatio: CropAspectRatio(ratioX: 1, ratioY: 1),
+      uiSettings: [
+    AndroidUiSettings(
           toolbarTitle: "裁剪",
           toolbarColor: Colors.blue,
           toolbarWidgetColor: Colors.white),
-      aspectRatio: CropAspectRatio(ratioX: 1, ratioY: 1),
+        IOSUiSettings(
+          title: '裁剪',
+        ),
+      ],
     );
-    return croppedFile;
+
+    return File(croppedFile!=null?croppedFile.path:'');
   }
 
   /// 返回bytes数组
@@ -73,7 +79,7 @@ class ImageUtils {
     void Function(bool success) endBack, {
     bool useCache: true,
   }) async {
-    try{
+    try {
       if (Platform.isAndroid) {
         bool permissionStorage = await Permission.storage.isGranted;
         if (!permissionStorage) {
@@ -83,8 +89,7 @@ class ImageUtils {
             print("❌----------has no Permission");
             return false;
           }
-        }
-        else{
+        } else {
           print("----------has Permission");
         }
       }
@@ -92,11 +97,10 @@ class ImageUtils {
 
       for (var i = 0; i < urls.length; i++) {
         String url = urls[i]!;
-        var data = await (getNetworkImageData(url, useCache: useCache) );
+        var data = await (getNetworkImageData(url, useCache: useCache));
         try {
           final Map<dynamic, dynamic>? result =
-          await (ImageGallerySaver.saveImage(data!,quality: 100) );
-
+              await (ImageGallerySaver.saveImage(data!, quality: 100));
         } catch (e) {
           if (e is ArgumentError) {
             if (Platform.isIOS) {
@@ -105,7 +109,6 @@ class ImageUtils {
             }
           }
 
-
           endBack(false);
 
           return false;
@@ -113,20 +116,18 @@ class ImageUtils {
       }
       endBack(true);
       return true;
-    }catch(e){
+    } catch (e) {
       print(e);
       callBack(99);
     }
     return null;
-
   }
 
-  static Future<bool?> saveImage(
-      List<Uint8List> fileDatas,
-      void Function(int index) callBack,
-      void Function(bool success) endBack,{int quality=80}) async {
+  static Future<bool?> saveImage(List<Uint8List> fileDatas,
+      void Function(int index) callBack, void Function(bool success) endBack,
+      {int quality = 80}) async {
     //
-    try{
+    try {
       if (Platform.isAndroid) {
         bool permissionStorage = await Permission.storage.isGranted;
         if (!permissionStorage) {
@@ -143,7 +144,7 @@ class ImageUtils {
         Uint8List data = fileDatas[i];
         try {
           final Map<dynamic, dynamic> result =
-          await (ImageGallerySaver.saveImage(data,quality: quality) );
+              await (ImageGallerySaver.saveImage(data, quality: quality));
 
           LoggerData.addData(result.containsValue(true));
           if (Platform.isAndroid) {
@@ -162,7 +163,6 @@ class ImageUtils {
             }
           }
         } catch (e) {
-
           LoggerData.addData(e.toString());
           if (e is ArgumentError) {
             if (Platform.isIOS) {
@@ -181,9 +181,7 @@ class ImageUtils {
       }
       endBack(true);
       return true;
-    }
-    catch(e){
+    } catch (e) {}
+    return null;
   }
-    return null;}
-
 }

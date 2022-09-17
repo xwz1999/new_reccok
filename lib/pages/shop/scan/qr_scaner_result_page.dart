@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:new_recook/constants/api.dart';
 import 'package:new_recook/gen/assets.gen.dart';
+import 'package:new_recook/models/goods/plus_minus_view.dart';
 import 'package:new_recook/models/home/scan_result_model.dart';
 import 'package:new_recook/widget/button/text_button.dart';
 import 'package:new_recook/widget/recook_back_button.dart';
@@ -68,7 +69,7 @@ class _QRScarerResultPageState extends State<QRScarerResultPage> {
               borderRadius: BorderRadius.circular(4.w),
               child: FadeInImage.assetNetwork(
                 placeholder: Assets.images.placeholderNew1x1A.path,
-                image: API.getImgUrl(model.brandImg)!,
+                image: API.getImgUrl(model.brandImg)??"",
                 width: 44.w,
                 height: 44.w,
                 imageErrorBuilder: (context, error, stackTrace) {
@@ -159,16 +160,16 @@ class _QRScarerResultPageState extends State<QRScarerResultPage> {
                         .bold
                         .size(24.sp)
                         .make(),
-                    // PlusMinusView(
-                    //   onValueChanged: (value) {
-                    //     _goodsCount = value;
-                    //   },
-                    //   initialValue: 1,
-                    //   maxValue: getMaxGoodsCount,
-                    //   onInputComplete: (text) {
-                    //     _goodsCount = int.parse(text);
-                    //   },
-                    // ).expand()
+                    PlusMinusView(
+                      onValueChanged: (value) {
+                        _goodsCount = value;
+                      },
+                      initialValue: 1,
+                      maxValue: getMaxGoodsCount,
+                      onInputComplete: (text) {
+                        _goodsCount = int.parse(text);
+                      },
+                    ).expand()
                   ],
                 )
               ],
