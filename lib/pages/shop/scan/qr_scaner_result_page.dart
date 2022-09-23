@@ -1,7 +1,6 @@
 import 'package:bot_toast/bot_toast.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:get/get.dart';
 import 'package:new_recook/constants/api.dart';
 import 'package:new_recook/gen/assets.gen.dart';
 import 'package:new_recook/models/goods/plus_minus_view.dart';
@@ -223,7 +222,7 @@ class _QRScarerResultPageState extends State<QRScarerResultPage> {
             ? null
             : () {
           _createOrder(widget.model!.skuID, widget.model!.skuName,
-              _goodsCount, context);
+              _goodsCount);
         },
       );
   }
@@ -249,8 +248,8 @@ class _QRScarerResultPageState extends State<QRScarerResultPage> {
   }
 
   Future<dynamic> _createOrder(
-      int? skuId, String? skuName, int quantity, BuildContext context,
-      {bool isLive = false, int liveId = 0}) async {
+      int? skuId, String? skuName, int quantity,
+      ) async {
     // OrderPreviewModel order = await GoodsDetailModelImpl.createOrderPreview(
     //   UserManager.instance!.user.info!.id,
     //   skuId,

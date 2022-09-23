@@ -5,7 +5,8 @@ class NoDataWidget extends StatelessWidget {
   final String text;
   final Widget? icon;
   final double? height;
-  const NoDataWidget({Key? key, required this.text, this.icon, this.height = 500,}) : super(key: key);
+  final Widget? btn;
+  const NoDataWidget({Key? key, required this.text, this.icon, this.height = 500, this.btn, }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -23,13 +24,15 @@ class NoDataWidget extends StatelessWidget {
                   height: 260.w,
                 ),
             SizedBox(
-              height: 8,
+              height: 16.w,
             ),
             Text(
               text,
               style: TextStyle(fontSize: 28.sp,color:Color(0xFFBBBBBB) ),
             ),
-
+            24.hb,
+            btn!=null? btn!
+            :SizedBox()
           ],
         ),
       );

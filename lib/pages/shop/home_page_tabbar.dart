@@ -29,10 +29,11 @@ class HomePageTabbar extends StatefulWidget {
 class _HomePageTabbarPage extends State<HomePageTabbar>
     with TickerProviderStateMixin {
   // List<Promotion> _promotionList = [];
+  String statusString = "";
   int hour = 0;
   //活动时间定时器
   Timer? _promotionTimer;
-  int _timeNumber = 0;
+  //int _timeNumber = 0;
 
   late GifController _gifController;
 
@@ -89,7 +90,7 @@ class _HomePageTabbarPage extends State<HomePageTabbar>
     PromotionStatus processStatus =
         PromotionTimeTool.getPromotionStatusWithTabbar(
             item.startTime, item.getTrueEndTime());
-    String statusString = "";
+
     switch (processStatus) {
       case PromotionStatus.end:
         statusString = "正在热卖";
@@ -112,9 +113,9 @@ class _HomePageTabbarPage extends State<HomePageTabbar>
         : processStatus == PromotionStatus.ready
             ? Colors.black
             : Colors.black.withOpacity(0.5);
-    Color subTextColor = processStatus == PromotionStatus.ready
-        ? Colors.black
-        : Colors.black.withOpacity(0.5);
+    // Color subTextColor = processStatus == PromotionStatus.ready
+    //     ? Colors.black
+    //     : Colors.black.withOpacity(0.5);
     Container textContainer = Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.all(Radius.circular(8)),

@@ -31,14 +31,6 @@ FirstCategory _$FirstCategoryFromJson(Map<String, dynamic> json) {
   );
 }
 
-Map<String, dynamic> _$FirstCategoryToJson(FirstCategory instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'parentId': instance.parentId,
-      'logoUrl': instance.logoUrl,
-      'sub': instance.sub,
-    };
 
 SecondCategory _$SecondCategoryFromJson(Map<String, dynamic> json) {
   return SecondCategory(

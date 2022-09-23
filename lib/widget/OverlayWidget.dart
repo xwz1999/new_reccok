@@ -7,10 +7,10 @@ import '../gen/assets.gen.dart';
 
 class OverlayLivingBtnWidget extends StatefulWidget {
   final int index;
-
+  final int? top;
   OverlayLivingBtnWidget({
     Key? key,
-    required this.index,
+    required this.index, this.top = 100,
   }) : super(key: key);
 
   @override
@@ -36,7 +36,7 @@ class _OverlayLivingBtnWidgetState extends State<OverlayLivingBtnWidget>
   @override
   void initState() {
     super.initState();
-    _topPos = ScreenUtil().screenHeight - 20 - _height - 100;
+    _topPos = ScreenUtil().screenHeight - 20 - _height - widget.top!;
     _leftPos = _leftPos = 20.w;
     index = widget.index;
 

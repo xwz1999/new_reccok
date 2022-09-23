@@ -108,7 +108,7 @@ class _PhotosFailBarcodePageState
                 color: AppColor.themeColor,
               ),
               onPressed: ()async{
-                var image = await (picker.getImage(source: ImageSource.gallery));
+                var image = await (picker.pickImage(source: ImageSource.gallery));
                 File? cropFile = await ImageUtils.cropImage(File(image!.path));
                 if (cropFile == null) {
                   return;

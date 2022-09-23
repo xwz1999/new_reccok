@@ -20,8 +20,8 @@ class _Styles {
       color: Colors.black, fontSize: 15 * 2.sp, fontWeight: FontWeight.w500);
   static final TextStyle deleteTextStyle = TextStyle(
       color: Colors.red, fontSize: 15 * 2.sp, fontWeight: FontWeight.w500);
-  static final TextStyle disableTextStyle = TextStyle(
-      color: Colors.grey, fontSize: 15 * 2.sp, fontWeight: FontWeight.w500);
+  // static final TextStyle disableTextStyle = TextStyle(
+  //     color: Colors.grey, fontSize: 15 * 2.sp, fontWeight: FontWeight.w500);
   static final TextStyle remindTextStyle = TextStyle(
       color: Colors.red, fontSize: 15 * 2.sp, fontWeight: FontWeight.bold);
 }

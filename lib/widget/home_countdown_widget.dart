@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:new_recook/constants/styles.dart';
 import 'package:new_recook/gen/assets.gen.dart';
-import 'package:new_recook/models/home/promotion_list_model.dart';
+// import 'package:new_recook/models/home/promotion_list_model.dart';
 import 'package:new_recook/utils/headers.dart';
 
 class HomeCountdownController{

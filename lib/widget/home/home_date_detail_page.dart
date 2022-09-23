@@ -3,7 +3,7 @@ import 'package:new_recook/models/home/home_weather_model.dart';
 import 'package:new_recook/pages/shop/calendar/calendar.dart';
 import 'package:new_recook/pages/shop/home_func.dart';
 import 'package:new_recook/utils/headers.dart';
-import 'package:new_recook/widget/home/holiday_calendar_model.dart';
+// import 'package:new_recook/widget/home/holiday_calendar_model.dart';
 import 'package:new_recook/models/home/wannianli_model.dart';
 import 'package:new_recook/widget/recook_back_button.dart';
 
@@ -21,7 +21,7 @@ class HomeDateDetailPage extends StatefulWidget {
 
 class _HomeDateDetailPageState extends State<HomeDateDetailPage> {
 
-  HolidayCalendarModel? _holidayCalendarModel;
+  // HolidayCalendarModel? _holidayCalendarModel;
 
   WanNianLiModel? wanNianLiModel;
 

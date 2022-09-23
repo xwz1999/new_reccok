@@ -1,5 +1,4 @@
 import 'package:new_recook/constants/api.dart';
-import 'package:new_recook/constants/constants.dart';
 import 'package:new_recook/gen/assets.gen.dart';
 import 'package:new_recook/models/goods/goods_model.dart';
 import 'package:new_recook/utils/headers.dart';

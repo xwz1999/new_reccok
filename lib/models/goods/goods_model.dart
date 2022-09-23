@@ -6,6 +6,8 @@ class GoodsModel{
   final String? imgPath;
   final int? inventory;
 
+  final String? title;
+
   const GoodsModel( {
     this.goodsName,
      this.saleNum,
@@ -13,5 +15,6 @@ class GoodsModel{
      this.price,
      this.imgPath,
     this.inventory,
+    this.title,
   });
 }

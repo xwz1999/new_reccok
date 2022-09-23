@@ -1,15 +1,13 @@
+import 'package:new_recook/constants/api.dart';
 import 'package:new_recook/constants/constants.dart';
 import 'package:new_recook/gen/assets.gen.dart';
 import 'package:new_recook/models/goods/category_model.dart';
 import 'package:new_recook/pages/shop/home_search_page.dart';
 import 'package:new_recook/utils/headers.dart';
-import 'package:new_recook/widget/button/img_button.dart';
 import 'package:new_recook/widget/home/sc_grid_view.dart';
 import 'package:new_recook/widget/home/sc_tab_bar.dart';
-import 'package:new_recook/widget/no_data_widget.dart';
 import 'package:new_recook/widget/recook_scaffold.dart';
 
-import '../../constants/api.dart';
 
 
 class ClassifyPage extends StatefulWidget {
@@ -52,13 +50,13 @@ class _ClassifyPageState extends State<ClassifyPage> with AutomaticKeepAliveClie
     super.build(context);
     return RecookScaffold(
       title: _buildTitle(),
-      body: widget.data == null ? _blankView() : _buildContent(),
+      body:  _buildContent(),
     );
   }
 
-  Widget _blankView() {
-    return NoDataWidget(text: '没有找到数据');
-  }
+  // Widget _blankView() {
+  //   return NoDataWidget(text: '没有找到数据');
+  // }
 
   Widget _buildTitle() {
     return GestureDetector(
@@ -203,7 +201,7 @@ class _ClassifyPageState extends State<ClassifyPage> with AutomaticKeepAliveClie
   buildGridView(
       double appbarHeight, double statusBarHeight, int index) {
     List<SecondCategory>? secondCategories = widget.data[index].sub;
-    String? firstTitle = widget.data[index].name;
+   // String? firstTitle = widget.data[index].name;
     return SCGridView(
         viewportHeight:
         DeviceInfo.screenHeight! - appbarHeight - statusBarHeight + 5,

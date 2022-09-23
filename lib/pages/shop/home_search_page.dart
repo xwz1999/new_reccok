@@ -1,9 +1,10 @@
-import 'package:extended_text/extended_text.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:new_recook/constants/styles.dart';
+import 'package:new_recook/gen/assets.gen.dart';
 import 'package:new_recook/models/goods/goods_item_grind_widget.dart';
 import 'package:new_recook/models/goods/goods_item_widget.dart';
 import 'package:new_recook/models/goods/goods_model.dart';
+import 'package:new_recook/utils/headers.dart';
 import 'package:new_recook/utils/hive_store.dart';
 import 'package:new_recook/utils/text_utils.dart';
 import 'package:new_recook/widget/button/text_button.dart';
@@ -13,10 +14,6 @@ import 'package:new_recook/widget/no_data_widget.dart';
 import 'package:new_recook/widget/recook_back_button.dart';
 import 'package:new_recook/widget/refresh_widget.dart';
 import 'package:waterfall_flow/waterfall_flow.dart';
-
-import '../../gen/assets.gen.dart';
-import '../../utils/headers.dart';
-
 class HomeSearchPage extends StatefulWidget {
   const HomeSearchPage({Key? key}) : super(key: key);
 

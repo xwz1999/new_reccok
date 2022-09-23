@@ -8,6 +8,7 @@ class CacheUtil {
   /// 获取缓存大小
   static Future<int> total() async {
     Directory tempDir = await getTemporaryDirectory();
+    // ignore: unnecessary_null_comparison
     if (tempDir == null) return 0;
     int total = await _reduce(tempDir);
     print(total);
@@ -17,6 +18,7 @@ class CacheUtil {
   /// 清除缓存
   static Future<void> clear() async {
     Directory tempDir = await getTemporaryDirectory();
+    // ignore: unnecessary_null_comparison
     if (tempDir == null) return;
     await _delete(tempDir);
   }
@@ -35,6 +37,7 @@ class CacheUtil {
 
       int total = 0;
 
+      // ignore: unnecessary_null_comparison
       if (children != null && children.isNotEmpty)
         for (final FileSystemEntity child in children)
           total += await _reduce(child);

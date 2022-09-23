@@ -90,7 +90,7 @@ class _UserInfoPageState extends State<UserInfoPage> {
                   maxTime: DateTime.now(),
                   currentTime: currentTime,
                   locale: LocaleType.zh, onConfirm: (DateTime date) {
-                    String time = date.toString().split("-").join("");
+                    //String time = date.toString().split("-").join("");
 
                   });
             }),

@@ -80,6 +80,7 @@ class RecookScaffold extends StatelessWidget {
     return AnnotatedRegion<SystemUiOverlayStyle>(
       value: systemStyle,
       child: Scaffold(
+        resizeToAvoidBottomInset: true,
         backgroundColor: bodyColor,
         appBar: appBar as PreferredSizeWidget?,
         extendBodyBehindAppBar: extendBody,

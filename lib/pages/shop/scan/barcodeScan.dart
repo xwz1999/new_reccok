@@ -32,7 +32,7 @@ class _BarcodeScanPageState extends State<BarcodeScanPage> {
   final player = AudioPlayer();
   final picker = ImagePicker();
   ScanController controller = ScanController();
-  String _platformVersion = 'Unknown';
+  // String _platformVersion = 'Unknown';
 
   bool _openLight = false;
 
@@ -44,16 +44,16 @@ class _BarcodeScanPageState extends State<BarcodeScanPage> {
 
 
   Future<void> initPlatformState() async {
-    String platformVersion;
+    //String platformVersion;
     try {
-      platformVersion = await Scan.platformVersion;
+      //platformVersion = await Scan.platformVersion;
     } on PlatformException {
-      platformVersion = 'Failed to get platform version.';
+      //platformVersion = 'Failed to get platform version.';
     }
     if (!mounted) return;
 
     setState(() {
-      _platformVersion = platformVersion;
+      //_platformVersion = platformVersion;
     });
   }
 
@@ -61,7 +61,7 @@ class _BarcodeScanPageState extends State<BarcodeScanPage> {
   Widget build(BuildContext context, {store}) {
     num width = MediaQuery.of(context).size.width;
     num height = MediaQuery.of(context).size.height;
-    Color lineColor = Color(0xffe53636).withAlpha(200);
+    //Color lineColor = Color(0xffe53636).withAlpha(200);
     return new Scaffold(
       body: Stack(
         alignment: Alignment.center,

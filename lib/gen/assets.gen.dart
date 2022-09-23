@@ -155,6 +155,9 @@ class $AssetsIconsGen {
   AssetGenImage get hotSellIconTwo =>
       const AssetGenImage('assets/icons/hot_sell_icon_two.png');
 
+  /// File path: assets/icons/icon_car.png
+  AssetGenImage get iconCar => const AssetGenImage('assets/icons/icon_car.png');
+
   /// File path: assets/icons/icon_change_grid.png
   AssetGenImage get iconChangeGrid =>
       const AssetGenImage('assets/icons/icon_change_grid.png');
@@ -362,6 +365,9 @@ class $AssetsWeatherCakeGen {
 
 class $AssetsWebpGen {
   const $AssetsWebpGen();
+
+  /// File path: assets/webp/hsjc.html
+  String get hsjc => 'assets/webp/hsjc.html';
 
   /// File path: assets/webp/recook_splash.webp
   AssetGenImage get recookSplash =>

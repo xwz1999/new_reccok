@@ -1,20 +1,9 @@
 import 'dart:async';
-import 'dart:io';
 import 'package:amap_flutter_location/amap_flutter_location.dart';
 import 'package:amap_flutter_location/amap_location_option.dart';
 import 'package:new_recook/constants/config.dart';
 import 'package:permission_handler/permission_handler.dart';
 
-/*
-//使用
-
-    locationUtil.getCurrentLocation((Map result){
-      print('接收到result:$result');
-    }).catchError((err){
-      Fluttertoast.showToast(msg: err);
-    });
-
-*/
 
 class LocationUtil {
   StreamSubscription<Map<String, Object>>? _locationListener;

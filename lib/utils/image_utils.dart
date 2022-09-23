@@ -99,7 +99,7 @@ class ImageUtils {
         String url = urls[i]!;
         var data = await (getNetworkImageData(url, useCache: useCache));
         try {
-          final Map<dynamic, dynamic>? result =
+          // final Map<dynamic, dynamic>? result =
               await (ImageGallerySaver.saveImage(data!, quality: 100));
         } catch (e) {
           if (e is ArgumentError) {

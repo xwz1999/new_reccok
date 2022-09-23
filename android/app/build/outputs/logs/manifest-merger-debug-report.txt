@@ -21,7 +21,7 @@ MERGED from [:image_cropper] /Users/datang/StudioProjects/new_recook/build/image
 MERGED from [:shared_preferences_android] /Users/datang/StudioProjects/new_recook/build/shared_preferences_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:just_audio] /Users/datang/StudioProjects/new_recook/build/just_audio/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:permission_handler_android] /Users/datang/StudioProjects/new_recook/build/permission_handler_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
-MERGED from [:photo_manager] /Users/datang/StudioProjects/new_recook/build/photo_manager/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:photo_manager] /Users/datang/StudioProjects/new_recook/build/photo_manager/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:package_info_plus] /Users/datang/StudioProjects/new_recook/build/package_info_plus/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:device_info_plus] /Users/datang/StudioProjects/new_recook/build/device_info_plus/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:audio_session] /Users/datang/StudioProjects/new_recook/build/audio_session/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
@@ -573,8 +573,10 @@ ADDED from [:fluwx] /Users/datang/StudioProjects/new_recook/build/fluwx/intermed
 		ADDED from [:fluwx] /Users/datang/StudioProjects/new_recook/build/fluwx/intermediates/library_manifest/debug/AndroidManifest.xml:61:17-67
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
 IMPLIED from /Users/datang/StudioProjects/new_recook/android/app/src/debug/AndroidManifest.xml:1:1-8:12 reason: com.jarvan.fluwx requested WRITE_EXTERNAL_STORAGE
-MERGED from [:photo_manager] /Users/datang/StudioProjects/new_recook/build/photo_manager/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-80
-MERGED from [:photo_manager] /Users/datang/StudioProjects/new_recook/build/photo_manager/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-80
+MERGED from [:photo_manager] /Users/datang/StudioProjects/new_recook/build/photo_manager/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:38
+MERGED from [:photo_manager] /Users/datang/StudioProjects/new_recook/build/photo_manager/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:38
+	android:maxSdkVersion
+		ADDED from [:photo_manager] /Users/datang/StudioProjects/new_recook/build/photo_manager/intermediates/library_manifest/debug/AndroidManifest.xml:9:9-35
 uses-permission#android.permission.RECORD_AUDIO
 ADDED from [:camera_android] /Users/datang/StudioProjects/new_recook/build/camera_android/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-71
 	android:name

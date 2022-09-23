@@ -1,4 +1,3 @@
-import 'package:amap_flutter_location/amap_flutter_location.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:new_recook/constants/config.dart';
